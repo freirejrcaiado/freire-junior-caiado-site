@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Freire Júnior Caiado - Advocacia e Consultoria | Brasília</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freire Júnior Caiado - Advocacia e Consultoria. Escritório com sede em Brasília desde 1997, com atuação em Direito Administrativo, empresas estatais e governança, contencioso estratégico e consultoria jurídica. Atendimento em português, inglês e espanhol.">
+  <style>
+    :root {
+      --color-bg: #f5f5f7;
+      --color-bg-alt: #ffffff;
+      --color-primary: #020617;
+      --color-secondary: #1d4ed8; /* azul institucional */
+      --color-accent: #fbbf24;    /* dourado discreto */
+      --color-muted: #6b7280;
+      --color-border: #e5e7eb;
+      --shadow-soft: 0 14px 45px rgba(15, 23, 42, 0.16);
+      --radius-lg: 18px;
+      --radius-full: 999px;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background: radial-gradient(circle at top, #e5e7eb 0, #f5f5f7 40%, #e5e7eb 100%);
+      color: var(--color-primary);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      padding: 0 1.5rem;
+      margin: 0 auto;
+    }
+
+    /* HEADER & NAV */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(245,245,247,0.96);
+      border-bottom: 1px solid rgba(226,232,240,0.8);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 0;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 0 0, #fbbf24, #1d4ed8 45%, #020617 100%);
+      box-shadow: 0 8px 20px rgba(15,23,42,0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      color: #f9fafb;
+      font-weight: 800;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-list a {
+      position: relative;
+      padding-bottom: 0.2rem;
+    }
+
+    .nav-list a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #1d4ed8, #fbbf24);
+      border-radius: 999px;
+      transition: width 0.2s ease-out;
+    }
+
+    .nav-list a:hover::after {
+      width: 100%;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid var(--color-border);
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 4.5rem 0 4rem;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+      gap: 2.5rem;
+      align-items: stretch;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.85rem;
+      border-radius: var(--radius-full);
+      background: rgba(15,23,42,0.04);
+      color: var(--color-muted);
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-tag span {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #22c55e;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 3vw + 1.6rem, 3.1rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.7rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.02rem;
+      color: var(--color-muted);
+      max-width: 36rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .language-note {
+      font-size: 0.82rem;
+      color: var(--color-muted);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      margin-top: 0.5rem;
+    }
+
+    .hero-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-meta span::before {
+      content: "•";
+      color: var(--color-secondary);
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, background 0.12s ease-out;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #1d4ed8, #0f172a);
+      color: #f9fafb;
+      box-shadow: 0 14px 40px rgba(37, 99, 235, 0.45);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 50px rgba(30, 64, 175, 0.55);
+    }
+
+    .btn-ghost {
+      background: rgba(15,23,42,0.02);
+      border-color: rgba(148,163,184,0.8);
+      color: var(--color-primary);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(15,23,42,0.05);
+      transform: translateY(-1px);
+    }
+
+    .hero-panel {
+      background: radial-gradient(circle at 0 0, #fbbf24 0, #1d4ed8 45%, #020617 100%);
+      border-radius: 26px;
+      padding: 1px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-panel-inner {
+      height: 100%;
+      border-radius: 24px;
+      padding: 1.75rem 1.5rem;
+      background: rgba(15,23,42,0.96);
+      color: #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .hero-panel-heading {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #9ca3af;
+    }
+
+    .hero-panel-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-top: 0.4rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .hero-panel-list {
+      list-style: none;
+      font-size: 0.9rem;
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .hero-panel-list li::before {
+      content: "◆";
+      margin-right: 0.4rem;
+      color: #fbbf24;
+      font-size: 0.75rem;
+    }
+
+    .hero-panel-note {
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 3.5rem 0;
+    }
+
+    .section-alt {
+      background: var(--color-bg-alt);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .section-header {
+      margin-bottom: 2rem;
+    }
+
+    .section-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .section-title {
+      font-size: 1.7rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-description {
+      font-size: 0.98rem;
+      color: var(--color-muted);
+      max-width: 38rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.86rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-muted);
+      margin: 2rem 0 1rem;
+    }
+
+    /* SOBRE O ESCRITÓRIO */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.3fr);
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    .about-text p + p {
+      margin-top: 0.8rem;
+    }
+
+    .about-bio {
+      margin-top: 1.4rem;
+      padding-top: 1.3rem;
+      border-top: 1px solid rgba(209,213,219,0.8);
+    }
+
+    .about-bio h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .about-bio-list {
+      list-style: none;
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      margin-top: 0.4rem;
+      display: grid;
+      gap: 0.2rem;
+    }
+
+    .timeline {
+      list-style: none;
+      border-left: 1px solid rgba(148,163,184,0.6);
+      padding-left: 1.2rem;
+      display: grid;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .timeline-item {
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -1.35rem;
+      top: 0.2rem;
+      width: 10px;
+      height: 10px;
+      background: #1d4ed8;
+      border-radius: 999px;
+      box-shadow: 0 0 0 4px rgba(191,219,254,0.8);
+    }
+
+    .timeline-year {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-muted);
+      margin-bottom: 0.1rem;
+    }
+
+    .timeline-title {
+      font-weight: 600;
+      margin-bottom: 0.1rem;
+    }
+
+    /* ÁREAS DE ATUAÇÃO */
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .priority-card {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      color: #e5e7eb;
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.6rem;
+      box-shadow: 0 18px 45px rgba(15,23,42,0.45);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .priority-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      background: rgba(15,23,42,0.3);
+      border: 1px solid rgba(191,219,254,0.5);
+    }
+
+    .priority-card h3 {
+      font-size: 1.02rem;
+      margin-top: 0.3rem;
+    }
+
+    .priority-card p {
+      font-size: 0.9rem;
+      color: #cbd5f5;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.7rem;
+    }
+
+    .card {
+      background: #f9fafb;
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.4rem 1.5rem;
+      border: 1px solid rgba(226,232,240,0.9);
+      box-shadow: 0 10px 26px rgba(15,23,42,0.04);
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      background: rgba(37,99,235,0.06);
+      color: #1d4ed8;
+      border: 1px solid rgba(191,219,254,0.9);
+      margin-bottom: 0.4rem;
+    }
+
+    /* DIFERENCIAIS */
+    .pill-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .pill {
+      background: rgba(15,23,42,0.02);
+      border-radius: var(--radius-full);
+      padding: 0.7rem 1rem;
+      border: 1px solid rgba(203,213,225,0.9);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .pill-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: rgba(37,99,235,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+    }
+
+    /* CONTEÚDO */
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.6rem;
+    }
+
+    .post {
+      background: #f9fafb;
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.2rem 1.2rem;
+      border: 1px dashed rgba(209,213,219,0.9);
+      font-size: 0.9rem;
+    }
+
+    .post-tag {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      color: var(--color-muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .post-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .post-note {
+      font-size: 0.8rem;
+      color: var(--color-muted);
+      margin-top: 0.4rem;
+    }
+
+    /* CONTATO */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr);
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .contact-block {
+      background: #f9fafb;
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.5rem 1.5rem;
+      border: 1px solid rgba(226,232,240,0.9);
+      box-shadow: 0 10px 26px rgba(15,23,42,0.04);
+      font-size: 0.92rem;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .contact-block strong {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-muted);
+    }
+
+    .contact-list {
+      list-style: none;
+      font-size: 0.9rem;
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .contact-list span {
+      font-weight: 600;
+    }
+
+    .contact-form {
+      background: var(--color-bg-alt);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.5rem 1.6rem;
+      border: 1px solid rgba(209,213,219,0.9);
+      font-size: 0.9rem;
+    }
+
+    .contact-form-row {
+      display: grid;
+      gap: 0.4rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .contact-form label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--color-muted);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      border-radius: 12px;
+      border: 1px solid rgba(209,213,219,0.9);
+      padding: 0.55rem 0.7rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      background: #fff;
+      outline: none;
+      transition: border-color 0.12s ease-out, box-shadow 0.12s ease-out;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 1px rgba(37,99,235,0.2);
+    }
+
+    .contact-form small {
+      font-size: 0.75rem;
+      color: var(--color-muted);
+    }
+
+    /* FOOTER */
+    .site-footer {
+      border-top: 1px solid rgba(209,213,219,0.9);
+      padding: 1.3rem 0 1.5rem;
+      font-size: 0.78rem;
+      color: var(--color-muted);
+      background: #f9fafb;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.7rem;
+      align-items: center;
+    }
+
+    .footer-note {
+      max-width: 38rem;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 900px) {
+      .hero-content,
+      .about-grid,
+      .priority-grid,
+      .cards-grid,
+      .content-grid,
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero {
+        padding-top: 3.5rem;
+      }
+
+      .hero-panel {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-list {
+        position: absolute;
+        top: 100%;
+        right: 1.5rem;
+        background: rgba(248,250,252,0.98);
+        border-radius: 14px;
+        border: 1px solid rgba(226,232,240,0.9);
+        box-shadow: 0 18px 40px rgba(15,23,42,0.16);
+        padding: 0.6rem 0.7rem;
+        flex-direction: column;
+        gap: 0.4rem;
+        min-width: 180px;
+        display: none;
+      }
+
+      .nav-list.nav-open {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="logo">
+      <div class="logo-mark">FJ</div>
+      <span>Freire Júnior Caiado - Advocacia e Consultoria</span>
+    </div>
+    <nav aria-label="Navegação principal">
+      <button class="nav-toggle" type="button" aria-label="Abrir menu">
+        Menu
+      </button>
+      <ul class="nav-list">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#escritorio">O Escritório</a></li>
+        <li><a href="#atuacao">Áreas de Atuação</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#conteudo">Conteúdo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-content">
+      <div>
+        <p class="hero-tag">
+          <span></span> Desde 1997 · Brasília · Advocacia e Consultoria
+        </p>
+        <h1 class="hero-title" id="hero-title">
+          Freire Júnior Caiado - Advocacia e Consultoria
+        </h1>
+        <p class="hero-subtitle">
+          Escritório de advocacia e consultoria com sede em Brasília, atuando desde 1997 em Direito Administrativo,
+          empresas estatais e governança, contencioso cível estratégico, Direito Corporativo, M&A e consultoria jurídica
+          em temas de alta complexidade.
+        </p>
+        <p class="language-note">
+          Atendimento em português, inglês e espanhol.
+        </p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary">
+            Falar com o escritório
+          </a>
+          <a href="#atuacao" class="btn btn-ghost">
+            Ver áreas de atuação
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span>Início das atividades em 1997</span>
+          <span>Sede no SAUS Quadra 6, Ed. Belvedere, Brasília-DF</span>
+          <span>Atuação neutra e técnica em relação ao Poder Público e à iniciativa privada</span>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Destaques do escritório">
+        <div class="hero-panel-inner">
+          <div>
+            <div class="hero-panel-heading">Posicionamento</div>
+            <div class="hero-panel-title">
+              Advocacia técnica, corporativa e estratégica.
+            </div>
+            <ul class="hero-panel-list">
+              <li>Direito Administrativo, licitações e contratos.</li>
+              <li>Empresas estatais, governança e integridade.</li>
+              <li>Contencioso cível e empresarial estratégico.</li>
+              <li>Direito Corporativo, M&A e Direito Penal Econômico.</li>
+              <li>Atuação em Tribunais Superiores e Tribunais de Contas.</li>
+            </ul>
+          </div>
+          <p class="hero-panel-note">
+            Conteúdo deste site com caráter exclusivamente informativo, em conformidade com o Estatuto da Advocacia e o Código de Ética da OAB (Seccionais DF e BA), sem oferta de resultados ou captação indevida de clientela.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SOBRE O ESCRITÓRIO -->
+  <section id="escritorio" class="section">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">O Escritório</p>
+        <h2 class="section-title">Trajetória em Direito Público e Corporativo desde 1997</h2>
+        <p class="section-description">
+          Com sede em Brasília, o escritório Freire Júnior Caiado - Advocacia e Consultoria concentra sua atuação em
+          temas jurídicos complexos, que exigem análise cuidadosa, visão institucional e tratamento estratégico.
+        </p>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Fundado em 1997, o escritório desenvolveu, ao longo dos anos, uma prática voltada à solução de questões
+            envolvendo Direito Administrativo, empresas estatais, contratos públicos, contencioso cível estratégico,
+            Direito Corporativo, M&A e governança.
+          </p>
+          <p>
+            A atuação combina rigor técnico, leitura sistêmica do ordenamento jurídico e diálogo constante com a
+            jurisprudência dos tribunais, em especial dos Tribunais Superiores e das Cortes de Contas, sem perder de
+            vista a realidade negocial e institucional dos clientes.
+          </p>
+          <p>
+            O escritório pauta-se por uma postura serena, discreta e objetiva, com comunicação clara e realista sobre
+            riscos, alternativas e caminhos jurídicos disponíveis, sempre em estrita observância às normas da OAB.
+          </p>
+
+          <div class="about-bio">
+            <h3>Sobre o sócio</h3>
+            <p>
+              À frente do escritório está <strong>Edval Freire Jr. Caiado</strong>, advogado corporativo e parecerista,
+              com atuação desde 1997 em temas de Direito Público e Privado. Ao longo de sua trajetória, consolidou
+              experiência em contratos complexos, governança, regulatório, contencioso estratégico e consultoria para
+              empresas e instituições.
+            </p>
+            <p>
+              Com formação interdisciplinar, Edval alia a técnica jurídica à compreensão das dinâmicas econômicas e de
+              gestão do setor público e privado, oferecendo análises consistentes e fundamentadas em precedentes,
+              doutrina qualificada e boas práticas de governança.
+            </p>
+            <ul class="about-bio-list">
+              <li>Advogado Corporativo e Parecerista.</li>
+              <li>Especialista em Direito Privado (UNEB).</li>
+              <li>MBA em Gestão e Economia do Setor Público (USP).</li>
+              <li>Atuação em consultoria e contencioso estratégico em diversas unidades da Federação.</li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="timeline" aria-label="Linha do tempo do escritório">
+          <li class="timeline-item">
+            <div class="timeline-year">1997</div>
+            <div class="timeline-title">Início das atividades</div>
+            <div>
+              Instalação do escritório em Brasília, com foco em Direito Civil, Empresarial e Direito Administrativo.
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-year">2000–2010</div>
+            <div class="timeline-title">Contratos e empresas estatais</div>
+            <div>
+              Intensificação da atuação em licitações, contratos administrativos e temas ligados a empresas estatais e
+              parcerias com o Poder Público.
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-year">2010–2020</div>
+            <div class="timeline-title">Governança e contencioso estratégico</div>
+            <div>
+              Consolidação de experiência em governança, integridade, Direito Corporativo, contencioso cível estratégico
+              e atuação perante Tribunais Superiores.
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-year">Atualmente</div>
+            <div class="timeline-title">Advocacia e consultoria integradas</div>
+            <div>
+              Atuação integrada em advocacia contenciosa, consultoria jurídica e pareceres, com atendimento em português,
+              inglês e espanhol, mantendo abordagem neutra quanto à função pública e à iniciativa privada.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÁREAS DE ATUAÇÃO -->
+  <section id="atuacao" class="section section-alt" aria-labelledby="atuacao-title">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">Áreas de Atuação</p>
+        <h2 class="section-title" id="atuacao-title">Foco em temas jurídicos complexos</h2>
+        <p class="section-description">
+          As áreas abaixo refletem a atuação do escritório em Direito Administrativo, Direito Corporativo e campos
+          correlatos, com ênfase em análise estratégica e visão de governança.
+        </p>
+      </header>
+
+      <!-- Áreas prioritárias -->
+      <div class="priority-grid">
+        <article class="priority-card">
+          <div class="priority-chip">Área prioritária</div>
+          <h3>Direito Administrativo (licitações e contratos)</h3>
+          <p>
+            Atuação em licitações, contratos administrativos, reequilíbrio econômico-financeiro, sanções e demais temas
+            ligados à relação entre Administração Pública e particulares.
+          </p>
+        </article>
+
+        <article class="priority-card">
+          <div class="priority-chip">Área prioritária</div>
+          <h3>Empresas estatais e governança</h3>
+          <p>
+            Consultoria e contencioso em temas relacionados a empresas estatais, regime jurídico híbrido, governança,
+            compliance, responsabilidade de administradores e interação com órgãos de controle.
+          </p>
+        </article>
+
+        <article class="priority-card">
+          <div class="priority-chip">Área prioritária</div>
+          <h3>Contencioso cível estratégico</h3>
+          <p>
+            Patrocínio de disputas cíveis e empresariais relevantes, com foco em tese jurídica, prova técnica, gestão de
+            risco e alinhamento com a jurisprudência dos tribunais.
+          </p>
+        </article>
+      </div>
+
+      <h3 class="section-subtitle">Outras áreas correlatas</h3>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="chip">Pareceres e Consultoria</div>
+          <h3>Pareceres e consultoria em Direito Público</h3>
+          <p>
+            Emissão de pareceres e notas técnicas em matérias de Direito Administrativo e Constitucional, bem como
+            assessoramento jurídico a dirigentes, conselhos e órgãos colegiados.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Tribunal de Contas</div>
+          <h3>Atuação no TCU</h3>
+          <p>
+            Atuação em processos perante o Tribunal de Contas da União, com foco em defesa técnica, acompanhamento de
+            tomadas de contas, análise de deliberações e orientação estratégica em face de acórdãos.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Direito Corporativo</div>
+          <h3>Direito Corporativo</h3>
+          <p>
+            Estruturação e acompanhamento de operações societárias, contratos empresariais, governança corporativa,
+            acordos de sócios e temas correlatos.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">M&A</div>
+          <h3>Fusões e Aquisições (M&A)</h3>
+          <p>
+            Assessoria jurídica em operações de M&A, incluindo análise de riscos, contratos, due diligence e aspectos
+            regulatórios relevantes.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Penal Econômico</div>
+          <h3>Direito Penal Econômico e da Empresa</h3>
+          <p>
+            Atuação em investigações e processos ligados a ilícitos econômicos, crimes contra a Administração Pública,
+            mercado e ordem econômica, sempre em interface com a realidade empresarial.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Compliance</div>
+          <h3>Compliance</h3>
+          <p>
+            Apoio na implementação e revisão de programas de integridade, gestão de riscos, políticas internas e
+            mecanismos de prevenção e resposta a irregularidades.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Agronegócio</div>
+          <h3>Direito do Agronegócio</h3>
+          <p>
+            Atuação em contratos, garantias, financiamentos e operações estruturadas voltadas ao agronegócio, inclusive
+            em interface com políticas públicas e crédito rural.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Direito Médico</div>
+          <h3>Direito Médico e Hospitalar</h3>
+          <p>
+            Atuação consultiva e contenciosa em questões envolvendo médicos, demais profissionais de saúde, hospitais, 
+            clínicas e operadoras, incluindo responsabilidade civil, relações contratuais, regulação sanitária, prontuário
+            e sigilo profissional, sempre com abordagem técnica e cuidadosa da prova.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Registral e Imobiliário</div>
+          <h3>Direito Registral e Imobiliário</h3>
+          <p>
+            Consultoria e contencioso em registros públicos, regularização imobiliária, contratos de compra e venda,
+            locação, garantias reais e temas correlatos.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Tribunais Superiores</div>
+          <h3>Atuação em Tribunais Superiores</h3>
+          <p>
+            Elaboração de peças, pareceres e estratégias voltadas a recursos e ações perante os Tribunais Superiores,
+            com atenção à formação e aplicação de precedentes.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section id="diferenciais" class="section">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">Diferenciais</p>
+        <h2 class="section-title">Como o escritório se posiciona</h2>
+        <p class="section-description">
+          A advocacia e a consultoria são conduzidas de forma integrada, com foco em clareza, previsibilidade e respeito
+          absoluto às balizas éticas da profissão.
+        </p>
+      </header>
+
+      <div class="pill-grid">
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Atuação baseada em precedentes, doutrina qualificada e leitura institucional do sistema de Justiça.</span>
+        </div>
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Visão integrada de Direito Público, Direito Privado, governança e realidade corporativa.</span>
+        </div>
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Comunicação técnica, mas acessível, com explicações claras e sem promessas de resultado.</span>
+        </div>
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Atendimento em português, inglês e espanhol, conforme a necessidade do cliente.</span>
+        </div>
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Postura discreta, neutra quanto à função pública e à iniciativa privada, com foco na solução jurídica.</span>
+        </div>
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Compromisso com ética, sigilo profissional e observância às normas da OAB (DF e BA).</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO -->
+  <section id="conteudo" class="section section-alt">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">Conteúdo & Publicações</p>
+        <h2 class="section-title">Textos e reflexões do escritório</h2>
+        <p class="section-description">
+          A seguir, três textos de apresentação que podem ser mantidos como base ou substituídos por artigos futuros.
+        </p>
+      </header>
+
+      <div class="content-grid">
+        <article class="post">
+          <div class="post-tag">Apresentação</div>
+          <div class="post-title">Por que a análise jurídica precisa ser estratégica</div>
+          <p>
+            Em temas complexos, não basta aplicar dispositivos de forma isolada. A leitura integrada de normas,
+            precedentes e contexto econômico é fundamental para que a orientação jurídica tenha efetividade e reduza
+            riscos, tanto para empresas quanto para instituições públicas.
+          </p>
+          <p class="post-note">
+            Texto de apresentação do posicionamento do escritório. Pode ser substituído por artigo futuro.
+          </p>
+        </article>
+
+        <article class="post">
+          <div class="post-tag">Apresentação</div>
+          <div class="post-title">Empresas estatais, governança e responsabilidade</div>
+          <p>
+            O reforço da governança e da integridade em empresas estatais não é apenas uma exigência normativa. Trata-se
+            de condição para decisões mais seguras, transparência e melhor relação com órgãos de controle e com a
+            sociedade.
+          </p>
+          <p class="post-note">
+            Texto introdutório sobre governança e integridade, alinhado à atuação do escritório.
+          </p>
+        </article>
+
+        <article class="post">
+          <div class="post-tag">Apresentação</div>
+          <div class="post-title">O contencioso como extensão da consultoria jurídica</div>
+          <p>
+            Processos judiciais e administrativos ganham qualidade quando dialogam com uma consultoria bem estruturada.
+            A construção da tese desde a origem, com documentação robusta e visão de precedentes, tende a produzir
+            resultados mais consistentes e previsíveis ao longo do tempo.
+          </p>
+          <p class="post-note">
+            Texto que ilustra a integração entre consultoria e contencioso na atuação do escritório.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">Contato</p>
+        <h2 class="section-title">Como falar com o escritório</h2>
+        <p class="section-description">
+          Abaixo estão os dados oficiais de contato do escritório em Brasília. Para assuntos sensíveis, recomenda-se
+          agendar reunião prévia.
+        </p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-block" aria-label="Informações de contato">
+          <div>
+            <strong>Endereço</strong>
+            <p>
+              SAUS Quadra 6 · Bloco K · Edifício Belvedere · sala 1002<br>
+              Brasília-DF · 70070-915
+            </p>
+          </div>
+          <div>
+            <strong>Contato</strong>
+            <ul class="contact-list">
+              <li><span>E-mail:</span> <a href="mailto:freire@adv.br">freire@adv.br</a></li>
+              <li><span>Telefone:</span> <a href="tel:+556132732554">+55 61 3273-2554</a></li>
+              <li><span>WhatsApp:</span> <a href="https://wa.me/5561981732554" target="_blank" rel="noopener">+55 61 98173-2554</a></li>
+            </ul>
+          </div>
+          <div>
+            <strong>Redes profissionais</strong>
+            <ul class="contact-list">
+              <li><span>LinkedIn:</span> @freire</li>
+              <li><span>Instagram:</span> @freire</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Horário de atendimento</strong>
+            <p>De segunda a sexta-feira, das 9h às 18h (horário de Brasília).</p>
+          </div>
+        </div>
+
+        <form class="contact-form" action="mailto:freire@adv.br" method="post" enctype="text/plain">
+          <div class="contact-form-row">
+            <label for="nome">Nome</label>
+            <input id="nome" name="Nome" type="text" required>
+          </div>
+          <div class="contact-form-row">
+            <label for="email">E-mail</label>
+            <input id="email" name="Email" type="email" required>
+          </div>
+          <div class="contact-form-row">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="Mensagem" required></textarea>
+          </div>
+          <div class="contact-form-row">
+            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            <small>
+              Ao enviar, os dados serão encaminhados por e-mail ao escritório. Não use este canal para emergências ou
+              prazos iminentes sem confirmação prévia de recebimento.
+            </small>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      © <span id="ano-atual"></span> Freire Júnior Caiado - Advocacia e Consultoria · Brasília/DF.
+    </div>
+    <div class="footer-note">
+      Este site tem caráter exclusivamente informativo, em conformidade com o Estatuto da Advocacia e da OAB, em especial as seccionais DF e BA. 
+      Não há oferta de serviços pela internet, nem promessa de resultado em processos judiciais ou administrativos.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Menu mobile
+  const navToggle = document.querySelector('.nav-toggle');
+  const navList = document.querySelector('.nav-list');
+
+  if (navToggle && navList) {
+    navToggle.addEventListener('click', () => {
+      navList.classList.toggle('nav-open');
+    });
+  }
+
+  // Ano automático no rodapé
+  const yearSpan = document.getElementById('ano-atual');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+</script>
+</body>
+</html>
