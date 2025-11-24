@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Freire Júnior Caiado - Advocacy and Legal Consultancy | Public Law, State-Owned Enterprises and Strategic Litigation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Law firm based in Brasília since 1997, focused on Public Law, state-owned enterprises, governance, strategic civil litigation, corporate law, M&A and medical and hospital law.">
+  <link rel="canonical" href="https://freirejrcaiado.github.io/freire-junior-caiado-site/index-en.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Freire Júnior Caiado - Advocacy and Legal Consultancy">
+  <meta property="og:description" content="Technical advocacy and legal advisory services in complex matters involving Public Law, state-owned enterprises, governance, strategic litigation and medical and hospital law.">
+  <meta property="og:url" content="https://freirejrcaiado.github.io/freire-junior-caiado-site/index-en.html">
+  <meta property="og:site_name" content="Freire Júnior Caiado - Advocacy and Legal Consultancy">
+  <!-- When you have a specific image (logo or institutional photo), replace the content below with the real URL -->
+  <!-- <meta property="og:image" content="https://YOUR-DOMAIN/images/og-image-en.jpg"> -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Freire Júnior Caiado - Advocacy and Legal Consultancy">
+  <meta name="twitter:description" content="Brasília-based law firm since 1997, focused on Public Law, state-owned enterprises, governance, strategic litigation and medical and hospital law.">
+  <!-- <meta name="twitter:image" content="https://YOUR-DOMAIN/images/og-image-en.jpg"> -->
+
+  <style>
+    :root {
+      --color-bg: #f5f5f7;
+      --color-bg-alt: #ffffff;
+      --color-primary: #020617;
+      --color-secondary: #1d4ed8;
+      --color-accent: #fbbf24;
+      --color-muted: #6b7280;
+      --color-border: #e5e7eb;
+      --shadow-soft: 0 14px 45px rgba(15, 23, 42, 0.16);
+      --radius-lg: 18px;
+      --radius-full: 999px;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", -apple-system, sans-serif;
+      line-height: 1.6;
+      background: radial-gradient(circle at top, #e5e7eb 0, #f5f5f7 40%, #e5e7eb 100%);
+      color: var(--color-primary);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      padding: 0 1.5rem;
+      margin: 0 auto;
+    }
+
+    /* HEADER & NAV */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(245,245,247,0.96);
+      border-bottom: 1px solid rgba(226,232,240,0.8);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 0;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      min-height: 40px;
+      max-width: 40px;
+      max-height: 40px;
+      flex: 0 0 40px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 0 0, #fbbf24, #1d4ed8 45%, #020617 100%);
+      box-shadow: 0 8px 20px rgba(15,23,42,0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      color: #f9fafb;
+      font-weight: 800;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-list a {
+      position: relative;
+      padding-bottom: 0.2rem;
+    }
+
+    .nav-list a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #1d4ed8, #fbbf24);
+      border-radius: 999px;
+      transition: width 0.2s ease-out;
+    }
+
+    .nav-list a:hover::after {
+      width: 100%;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      padding: 0.35rem 0.75rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    /* Language switch (simple text link for now) */
+    .lang-switch {
+      font-size: 0.8rem;
+      color: var(--color-muted);
+    }
+
+    .lang-switch a {
+      font-weight: 500;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 4.5rem 0 4rem;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+      gap: 2.5rem;
+      align-items: stretch;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.85rem;
+      border-radius: var(--radius-full);
+      background: rgba(15,23,42,0.04);
+      color: var(--color-muted);
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-tag span {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #22c55e;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 3vw + 1.6rem, 3.1rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.7rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.02rem;
+      color: var(--color-muted);
+      max-width: 36rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .language-note {
+      font-size: 0.82rem;
+      color: var(--color-muted);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      margin-top: 0.5rem;
+    }
+
+    .hero-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-meta span::before {
+      content: "•";
+      color: var(--color-secondary);
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, background 0.12s ease-out;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #1d4ed8, #0f172a);
+      color: #f9fafb;
+      box-shadow: 0 14px 40px rgba(37, 99, 235, 0.45);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 50px rgba(30, 64, 175, 0.55);
+    }
+
+    .btn-ghost {
+      background: rgba(15,23,42,0.02);
+      border-color: rgba(148,163,184,0.8);
+      color: var(--color-primary);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(15,23,42,0.05);
+      transform: translateY(-1px);
+    }
+
+    .hero-panel {
+      background: radial-gradient(circle at 0 0, #fbbf24 0, #1d4ed8 45%, #020617 100%);
+      border-radius: 26px;
+      padding: 1px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-panel-inner {
+      height: 100%;
+      border-radius: 24px;
+      padding: 1.75rem 1.5rem;
+      background: rgba(15,23,42,0.96);
+      color: #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .hero-panel-heading {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #9ca3af;
+    }
+
+    .hero-panel-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-top: 0.4rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .hero-panel-list {
+      list-style: none;
+      font-size: 0.9rem;
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .hero-panel-list li::before {
+      content: "◆";
+      margin-right: 0.4rem;
+      color: #fbbf24;
+      font-size: 0.75rem;
+    }
+
+    .hero-panel-note {
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 3.5rem 0;
+    }
+
+    .section-alt {
+      background: var(--color-bg-alt);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .section-header {
+      margin-bottom: 2rem;
+    }
+
+    .section-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .section-title {
+      font-size: 1.7rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-description {
+      font-size: 0.98rem;
+      color: var(--color-muted);
+      max-width: 38rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.86rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-muted);
+      margin: 2rem 0 1rem;
+    }
+
+    section[id] {
+      scroll-margin-top: 80px;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.3fr);
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    .about-text p + p {
+      margin-top: 0.8rem;
+    }
+
+    .about-bio {
+      margin-top: 1.4rem;
+      padding-top: 1.3rem;
+      border-top: 1px solid rgba(209,213,219,0.8);
+    }
+
+    .about-bio h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .about-bio-list {
+      list-style: none;
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      margin-top: 0.4rem;
+      display: grid;
+      gap: 0.2rem;
+    }
+
+    .timeline {
+      list-style: none;
+      border-left: 1px solid rgba(148,163,184,0.6);
+      padding-left: 1.2rem;
+      display: grid;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .timeline-item {
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -1.35rem;
+      top: 0.2rem;
+      width: 10px;
+      height: 10px;
+      background: #1d4ed8;
+      border-radius: 999px;
+      box-shadow: 0 0 0 4px rgba(191,219,254,0.8);
+    }
+
+    .timeline-year {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-muted);
+      margin-bottom: 0.1rem;
+    }
+
+    .timeline-title {
+      font-weight: 600;
+      margin-bottom: 0.1rem;
+    }
+
+    /* PRACTICE AREAS */
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .priority-card {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      color: #e5e7eb;
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.6rem;
+      box-shadow: 0 18px 45px rgba(15,23,42,0.45);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .priority-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      background: rgba(15,23,42,0.3);
+      border: 1px solid rgba(191,219,254,0.5);
+    }
+
+    .priority-card h3 {
+      font-size: 1.02rem;
+      margin-top: 0.3rem;
+    }
+
+    .priority-card p {
+      font-size: 0.9rem;
+      color: #cbd5f5;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.7rem;
+    }
+
+    .card {
+      background: #f9fafb;
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.4rem 1.5rem;
+      border: 1px solid rgba(226,232,240,0.9);
+      box-shadow: 0 10px 26px rgba(15,23,42,0.04);
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      background: rgba(37,99,235,0.06);
+      color: #1d4ed8;
+      border: 1px solid rgba(191,219,254,0.9);
+      margin-bottom: 0.4rem;
+    }
+
+    /* DIFFERENTIATORS */
+    .pill-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .pill {
+      background: rgba(15,23,42,0.02);
+      border-radius: var(--radius-full);
+      padding: 0.7rem 1rem;
+      border: 1px solid rgba(203,213,225,0.9);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .pill-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: rgba(37,99,235,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+    }
+
+    /* CONTENT */
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.6rem;
+    }
+
+    .post {
+      background: #f9fafb;
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.2rem 1.2rem;
+      border: 1px dashed rgba(209,213,219,0.9);
+      font-size: 0.9rem;
+    }
+
+    .post-tag {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      color: var(--color-muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .post-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .post-note {
+      font-size: 0.8rem;
+      color: var(--color-muted);
+      margin-top: 0.4rem;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr);
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .contact-block {
+      background: #f9fafb;
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.5rem 1.5rem;
+      border: 1px solid rgba(226,232,240,0.9);
+      box-shadow: 0 10px 26px rgba(15,23,42,0.04);
+      font-size: 0.92rem;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .contact-block strong {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-muted);
+    }
+
+    .contact-list {
+      list-style: none;
+      font-size: 0.9rem;
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .contact-list span {
+      font-weight: 600;
+    }
+
+    .contact-form {
+      background: var(--color-bg-alt);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.5rem 1.6rem;
+      border: 1px solid rgba(209,213,219,0.9);
+      font-size: 0.9rem;
+    }
+
+    .contact-form-row {
+      display: grid;
+      gap: 0.4rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .contact-form label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--color-muted);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      border-radius: 12px;
+      border: 1px solid rgba(209,213,219,0.9);
+      padding: 0.55rem 0.7rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      background: #fff;
+      outline: none;
+      transition: border-color 0.12s ease-out, box-shadow 0.12s ease-out;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 1px rgba(37,99,235,0.2);
+    }
+
+    .contact-form small {
+      font-size: 0.75rem;
+      color: var(--color-muted);
+    }
+
+    /* FOOTER */
+    .site-footer {
+      border-top: 1px solid rgba(209,213,219,0.9);
+      padding: 1.3rem 0 1.5rem;
+      font-size: 0.78rem;
+      color: var(--color-muted);
+      background: #f9fafb;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.7rem;
+      align-items: center;
+    }
+
+    .footer-note {
+      max-width: 38rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero-content,
+      .about-grid,
+      .priority-grid,
+      .cards-grid,
+      .content-grid,
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero {
+        padding-top: 3.5rem;
+      }
+
+      .hero-panel {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-list {
+        position: absolute;
+        top: 100%;
+        right: 1.5rem;
+        background: rgba(248,250,252,0.98);
+        border-radius: 14px;
+        border: 1px solid rgba(226,232,240,0.9);
+        box-shadow: 0 18px 40px rgba(15,23,42,0.16);
+        padding: 0.6rem 0.7rem;
+        flex-direction: column;
+        gap: 0.4rem;
+        min-width: 180px;
+        display: none;
+      }
+
+      .nav-list.nav-open {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+
+      .lang-switch {
+        display: none; /* se quiser, esconda o switch no mobile ou mova para o menu */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="logo">
+      <div class="logo-mark">FJ</div>
+      <span>Freire Júnior Caiado - Advocacy and Legal Consultancy</span>
+    </div>
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-label="Open menu">
+        Menu
+      </button>
+      <ul class="nav-list">
+        <li><a href="#start">Home</a></li>
+        <li><a href="#firm">The Firm</a></li>
+        <li><a href="#practice">Practice Areas</a></li>
+        <li><a href="#differentials">Approach</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch">
+      EN · <a href="index.html">PT</a>
+    </div>
+  </div>
+</header>
+
+<main id="start">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-content">
+      <div>
+        <p class="hero-tag">
+          <span></span> Since 1997 · Brasília · Advocacy and Legal Consultancy
+        </p>
+        <h1 class="hero-title" id="hero-title">
+          Freire Júnior Caiado - Advocacy and Legal Consultancy
+        </h1>
+        <p class="hero-subtitle">
+          Law firm based in Brasília, Brazil, acting since 1997 in Public Law, state-owned enterprises and governance,
+          strategic civil and business litigation, corporate law, M&A and legal advisory on complex matters.
+        </p>
+        <p class="language-note">
+          Service in Portuguese, English and Spanish.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            Contact the firm
+          </a>
+          <a href="#practice" class="btn btn-ghost">
+            View practice areas
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span>Practising since 1997 in Brasília</span>
+          <span>Office at SAUS Quadra 6, Ed. Belvedere, Brasília-DF</span>
+          <span>Neutral and technical stance regarding public sector and private clients</span>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Firm highlights">
+        <div class="hero-panel-inner">
+          <div>
+            <div class="hero-panel-heading">Positioning</div>
+            <div class="hero-panel-title">
+              Technical, corporate and strategic advocacy.
+            </div>
+            <ul class="hero-panel-list">
+              <li>Public Law, public procurement and administrative contracts.</li>
+              <li>State-owned enterprises, governance and integrity.</li>
+              <li>Strategic civil and business litigation.</li>
+              <li>Corporate Law, M&A and Economic Criminal Law.</li>
+              <li>Advocacy before Superior Courts and Audit Courts.</li>
+            </ul>
+          </div>
+          <p class="hero-panel-note">
+            This website is strictly informational and complies with the rules of the Brazilian Bar Association
+            (OAB). It does not offer guarantees of results or solicit clients in violation of professional ethics.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- THE FIRM -->
+  <section id="firm" class="section">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">The Firm</p>
+        <h2 class="section-title">Public Law and Corporate practice since 1997</h2>
+        <p class="section-description">
+          Based in Brasília, the firm focuses on complex legal matters that require careful analysis, institutional
+          understanding and a strategic approach.
+        </p>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Founded in 1997, the firm has developed a practice focused on solving issues involving Public Law,
+            state-owned enterprises, public contracts, strategic civil litigation, Corporate Law, M&A and governance.
+          </p>
+          <p>
+            The work combines technical rigour, a systemic reading of the legal framework and constant dialogue with
+            court precedents, especially those of Brazil’s Superior Courts and Audit Courts, while remaining attentive
+            to the institutional and business reality of clients.
+          </p>
+          <p>
+            The firm maintains a calm, discreet and objective posture, with clear and realistic communication on risks,
+            alternatives and available legal strategies, always in strict compliance with Brazilian Bar rules.
+          </p>
+
+          <div class="about-bio">
+            <h3>About the partner</h3>
+            <p>
+              The firm is led by <strong>Edval Freire Jr. Caiado</strong>, a corporate lawyer and legal opinion writer
+              (parecerista), practising since 1997 in Public and Private Law. Over the years, he has built experience in
+              complex contracts, governance, regulatory matters, strategic litigation and advisory work for companies
+              and institutions.
+            </p>
+            <p>
+              With an interdisciplinary background, he brings together legal technique and an understanding of
+              economic and management dynamics in both the public and private sectors, providing consistent analysis
+              grounded in precedents, respected scholarship and sound governance practices.
+            </p>
+            <ul class="about-bio-list">
+              <li>Corporate Lawyer and Legal Opinion Writer (parecerista).</li>
+              <li>Specialist in Private Law (UNEB).</li>
+              <li>MBA in Public Sector Management and Economics (USP).</li>
+              <li>Experience in advisory and strategic litigation in several Brazilian states.</li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="timeline" aria-label="Firm timeline">
+          <li class="timeline-item">
+            <div class="timeline-year">1997</div>
+            <div class="timeline-title">Start of practice</div>
+            <div>
+              Establishment of the firm in Brasília, initially focused on Civil, Business and Administrative Law.
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-year">2000–2010</div>
+            <div class="timeline-title">Public contracts and state-owned enterprises</div>
+            <div>
+              Increased experience in public procurement, administrative contracts and matters involving state-owned
+              enterprises and partnerships with the public sector.
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-year">2010–2020</div>
+            <div class="timeline-title">Governance and strategic litigation</div>
+            <div>
+              Consolidation of work in governance, integrity, Corporate Law, strategic civil litigation and advocacy
+              before Brazil’s Superior Courts.
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-year">Present</div>
+            <div class="timeline-title">Integrated advocacy and consultancy</div>
+            <div>
+              Integrated work in litigation, legal consultancy and formal legal opinions, with service in Portuguese,
+              English and Spanish and a neutral approach regarding public entities and private clients.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE AREAS -->
+  <section id="practice" class="section section-alt" aria-labelledby="practice-title">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">Practice Areas</p>
+        <h2 class="section-title" id="practice-title">Focus on complex legal matters</h2>
+        <p class="section-description">
+          The firm’s practice areas reflect its work in Public Law, Corporate Law and related fields, with an emphasis
+          on strategic analysis and governance.
+        </p>
+      </header>
+
+      <!-- Priority areas -->
+      <div class="priority-grid">
+        <article class="priority-card">
+          <div class="priority-chip">Priority area</div>
+          <h3>Public Law (procurement and contracts)</h3>
+          <p>
+            Work in public procurement, administrative contracts, economic rebalance claims, sanctions and related
+            topics in the relationship between public entities and private parties.
+          </p>
+        </article>
+
+        <article class="priority-card">
+          <div class="priority-chip">Priority area</div>
+          <h3>State-owned enterprises and governance</h3>
+          <p>
+            Advisory and litigation involving state-owned enterprises, hybrid legal regimes, governance, compliance,
+            directors’ liability and interaction with oversight bodies.
+          </p>
+        </article>
+
+        <article class="priority-card">
+          <div class="priority-chip">Priority area</div>
+          <h3>Strategic civil litigation</h3>
+          <p>
+            Representation in significant civil and business disputes, with focus on legal theory, technical evidence,
+            risk management and alignment with court precedents.
+          </p>
+        </article>
+      </div>
+
+      <h3 class="section-subtitle">Related practice areas</h3>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="chip">Legal Opinions & Advisory</div>
+          <h3>Public Law opinions and advisory work</h3>
+          <p>
+            Drafting of legal opinions and technical memoranda in Administrative and Constitutional Law, as well as
+            advisory work for executives, boards and collegiate bodies.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Audit Courts</div>
+          <h3>Work before the Federal Audit Court (TCU)</h3>
+          <p>
+            Representation in cases before the Federal Court of Accounts (TCU), including defence briefs, monitoring of
+            special account proceedings, analysis of decisions and strategic guidance in light of case law.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Corporate Law</div>
+          <h3>Corporate Law</h3>
+          <p>
+            Structuring and monitoring of corporate transactions, business contracts, corporate governance, shareholders’
+            agreements and related matters.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">M&A</div>
+          <h3>Mergers and Acquisitions (M&A)</h3>
+          <p>
+            Legal assistance in M&A transactions, including risk assessment, contractual arrangements, due diligence and
+            regulatory aspects.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Economic Criminal Law</div>
+          <h3>Economic and Business Criminal Law</h3>
+          <p>
+            Work in investigations and proceedings involving economic offences, crimes against the public administration,
+            the market and the economic order, always in close interface with business reality.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Compliance</div>
+          <h3>Compliance</h3>
+          <p>
+            Support in implementing and reviewing integrity programs, risk management structures, internal policies and
+            mechanisms for preventing and responding to irregularities.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Agribusiness</div>
+          <h3>Agribusiness Law</h3>
+          <p>
+            Work in contracts, guarantees, financing and structured operations related to agribusiness, including
+            dealings with public policies and rural credit.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Medical Law</div>
+          <h3>Medical and Hospital Law</h3>
+          <p>
+            Advisory and litigation in matters involving physicians, other health professionals, hospitals, clinics and
+            health plan operators, including civil liability, contracts, health regulation, medical records and
+            professional confidentiality, with a technical and evidence-focused approach.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Real Estate & Registry</div>
+          <h3>Real Estate and Registry Law</h3>
+          <p>
+            Advisory and litigation in public registries, real estate regularisation, purchase and sale agreements,
+            leases, security interests and related matters.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="chip">Superior Courts</div>
+          <h3>Advocacy before Superior Courts</h3>
+          <p>
+            Drafting of briefs, legal opinions and strategies for appeals and actions before Brazil’s Superior Courts,
+            with attention to precedent formation and application.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="differentials" class="section">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">Approach</p>
+        <h2 class="section-title">How the firm operates</h2>
+        <p class="section-description">
+          Litigation and legal advisory work are conducted in an integrated way, with focus on clarity, predictability
+          and strict respect for professional ethics.
+        </p>
+      </header>
+
+      <div class="pill-grid">
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Work grounded in court precedents, respected scholarship and an institutional reading of the justice system.</span>
+        </div>
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Integrated view of Public Law, Private Law, governance and corporate realities.</span>
+        </div>
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Technical yet accessible communication, with clear explanations and no promises of specific results.</span>
+        </div>
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Service in Portuguese, English and Spanish, according to client needs.</span>
+        </div>
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Discrete posture and neutrality regarding public entities and private clients, focusing on legal solutions.</span>
+        </div>
+        <div class="pill">
+          <div class="pill-icon">✓</div>
+          <span>Commitment to ethics, professional secrecy and compliance with Brazilian Bar Association (OAB) rules.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section id="insights" class="section section-alt">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">Insights & Publications</p>
+        <h2 class="section-title">Introductory texts and reflections</h2>
+        <p class="section-description">
+          Below are three introductory texts, which may be kept as a basis or replaced with future articles.
+        </p>
+      </header>
+
+      <div class="content-grid">
+        <article class="post">
+          <div class="post-tag">Introductory</div>
+          <div class="post-title">Why legal analysis needs to be strategic</div>
+          <p>
+            In complex matters, it is not enough to apply legal provisions in isolation. An integrated reading of rules,
+            precedents and economic context is essential so that legal advice is effective and actually reduces risk
+            for both businesses and public institutions.
+          </p>
+          <p class="post-note">
+            Introductory text on the firm’s positioning. It may be replaced with a future article.
+          </p>
+        </article>
+
+        <article class="post">
+          <div class="post-tag">Introductory</div>
+          <div class="post-title">State-owned enterprises, governance and accountability</div>
+          <p>
+            Strengthening governance and integrity in state-owned enterprises is not only a regulatory requirement. It
+            is a condition for safer decision-making, greater transparency and a better relationship with oversight
+            bodies and society at large.
+          </p>
+          <p class="post-note">
+            Introductory text on governance and integrity, aligned with the firm’s practice.
+          </p>
+        </article>
+
+        <article class="post">
+          <div class="post-tag">Introductory</div>
+          <div class="post-title">Litigation as an extension of legal advisory work</div>
+          <p>
+            Judicial and administrative proceedings tend to be more consistent when they are built upon well-structured
+            advisory work. Building the legal theory from the outset, supported by proper documentation and precedents,
+            usually leads to more predictable and robust outcomes over time.
+          </p>
+          <p class="post-note">
+            Text illustrating how the firm articulates advisory work and litigation.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">Contact</p>
+        <h2 class="section-title">How to reach the firm</h2>
+        <p class="section-description">
+          Below are the firm’s official contact details in Brasília. For sensitive matters, scheduling a meeting in
+          advance is recommended.
+        </p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-block" aria-label="Contact information">
+          <div>
+            <strong>Address</strong>
+            <p>
+              SAUS Quadra 6 · Block K · Edifício Belvedere · Suite 1002<br>
+              Brasília-DF · 70070-915 · Brazil
+            </p>
+          </div>
+          <div>
+            <strong>Contact</strong>
+            <ul class="contact-list">
+              <li><span>E-mail:</span> <a href="mailto:freire@adv.br">freire@adv.br</a></li>
+              <li><span>Phone:</span> <a href="tel:+556132732554">+55 61 3273-2554</a></li>
+              <li><span>WhatsApp:</span> <a href="https://wa.me/5561981732554" target="_blank" rel="noopener">+55 61 98173-2554</a></li>
+            </ul>
+          </div>
+          <div>
+            <strong>Professional networks</strong>
+            <ul class="contact-list">
+              <li><span>LinkedIn:</span> @freire</li>
+              <li><span>Instagram:</span> @freire</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Business hours</strong>
+            <p>Monday to Friday, from 9 a.m. to 6 p.m. (Brasília time).</p>
+          </div>
+        </div>
+
+        <form class="contact-form" action="mailto:freire@adv.br" method="post" enctype="text/plain">
+          <div class="contact-form-row">
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" required>
+          </div>
+          <div class="contact-form-row">
+            <label for="email">E-mail</label>
+            <input id="email" name="Email" type="email" required>
+          </div>
+          <div class="contact-form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" required></textarea>
+          </div>
+          <div class="contact-form-row">
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <small>
+              By sending this form, your message will be forwarded by e-mail to the firm. Do not use this channel for
+              emergencies or time-sensitive deadlines without prior confirmation of receipt.
+            </small>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      © <span id="current-year"></span> Freire Júnior Caiado - Advocacy and Legal Consultancy · Brasília/DF · Brazil.
+    </div>
+    <div class="footer-note">
+      This website is strictly informational. It complies with the rules of the Brazilian Bar Association (OAB) and
+      does not offer guarantees of results in judicial or administrative proceedings, nor does it promote improper
+      client solicitation.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  const navToggle = document.querySelector('.nav-toggle');
+  const navList = document.querySelector('.nav-list');
+
+  if (navToggle && navList) {
+    navToggle.addEventListener('click', () => {
+      navList.classList.toggle('nav-open');
+    });
+  }
+
+  // Current year in footer
+  const yearSpan = document.getElementById('current-year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+</script>
+</body>
+</html>
