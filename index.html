@@ -1172,71 +1172,55 @@ color: var(--color-muted);
   </section>
 
   <!-- CONTATO -->
-  <section id="contato" class="section">
+  <section id="contato" class="section" aria-labelledby="contato-title">
     <div class="container">
       <header class="section-header">
         <p class="section-kicker">Contato</p>
-        <h2 class="section-title">Como falar com o escritório</h2>
-        <p class="section-description">
-          Abaixo estão os dados oficiais de contato do escritório em Brasília. Para assuntos sensíveis, recomenda-se
-          agendar reunião prévia.
-        </p>
+        <h2 class="section-title" id="contato-title">Fale com o escritório</h2>
       </header>
-
+  
       <div class="contact-grid">
-        <div class="contact-block" aria-label="Informações de contato">
-          <div>
-            <strong>Endereço</strong>
-            <p>
-              SAUS Quadra 6 · Bloco K · Edifício Belvedere · sala 1002<br>
-              Brasília-DF · 70070-915
-            </p>
-          </div>
-          <div>
-            <strong>Contato</strong>
-            <ul class="contact-list">
-              <li><span>E-mail:</span> <a href="mailto:freire@adv.br">freire@adv.br</a></li>
-              <li><span>Telefone:</span> <a href="tel:+556132732554">+55 61 3273-2554</a></li>
-              <li><span>WhatsApp:</span> <a href="https://wa.me/5561981732554" target="_blank" rel="noopener">+55 61 98173-2554</a></li>
-            </ul>
-          </div>
-          <div>
-            <strong>Redes profissionais</strong>
-            <ul class="contact-list">
-              <li><span>LinkedIn:</span> @freire</li>
-              <li><span>Instagram:</span> @freire</li>
-            </ul>
-          </div>
-          <div>
-            <strong>Horário de atendimento</strong>
-            <p>De segunda a sexta-feira, das 9h às 18h (horário de Brasília).</p>
-          </div>
+        <div>
+          <h3>Endereço</h3>
+          <p>
+            SAUS Quadra 6 · Bloco K · Edifício Belvedere · sala 1002<br>
+            Brasília-DF · 70070-915
+          </p>
+  
+          <h3>Contato direto</h3>
+          <p>
+            E-mail:
+            <a href="mailto:freire@adv.br">freire@adv.br</a>
+          </p>
+          <p>
+            Telefone fixo:
+            <a href="tel:+556132732554">+55 61 3273-2554</a>
+          </p>
+          <p>
+            Celular / WhatsApp:
+            <a href="https://wa.me/5561981732554" target="_blank" rel="noopener noreferrer">
+              +55 61 98173-2554
+            </a>
+          </p>
+  
+          <h3>Redes</h3>
+          <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/freire" target="_blank" rel="noopener noreferrer">
+              @freire
+            </a>
+          </p>
+          <p>
+            Instagram:
+            <a href="https://www.instagram.com/freire" target="_blank" rel="noopener noreferrer">
+              @freire
+            </a>
+          </p>
         </div>
-
-        <form class="contact-form" action="mailto:freire@adv.br" method="post" enctype="text/plain">
-          <div class="contact-form-row">
-            <label for="nome">Nome</label>
-            <input id="nome" name="Nome" type="text" required>
-          </div>
-          <div class="contact-form-row">
-            <label for="email">E-mail</label>
-            <input id="email" name="Email" type="email" required>
-          </div>
-          <div class="contact-form-row">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="Mensagem" required></textarea>
-          </div>
-          <div class="contact-form-row">
-            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
-            <small>
-              Ao enviar, os dados serão encaminhados por e-mail ao escritório. Não use este canal para emergências ou
-              prazos iminentes sem confirmação prévia de recebimento.
-            </small>
-          </div>
-        </form>
       </div>
     </div>
-  </section>
+</section>
+
 </main>
 
 <footer class="site-footer">
@@ -1270,6 +1254,7 @@ color: var(--color-muted);
 </script>
 </body>
 </html>
+
 
 
 
