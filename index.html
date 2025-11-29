@@ -769,7 +769,8 @@ color: var(--color-muted);
   </style>
 </head>
 <body>
-<header class="site-header">
+  <a href="#inicio" class="skip-link">Pular para o conteúdo principal</a>
+  <header class="site-header">
   <div class="container nav-container">
     <div class="logo">
       <div class="logo-mark">FJ</div>
@@ -794,6 +795,23 @@ color: var(--color-muted);
   </div>
 </header>
 
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fbbf24;
+  color: #020617;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 1rem;
+}
+  
 <main id="inicio">
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-title">
@@ -1256,6 +1274,7 @@ color: var(--color-muted);
 </script>
 </body>
 </html>
+
 
 
 
