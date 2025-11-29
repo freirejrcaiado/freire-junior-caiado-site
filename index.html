@@ -777,10 +777,16 @@ color: var(--color-muted);
       <span>Freire Júnior Caiado - Advocacia e Consultoria</span>
     </div>
     <nav aria-label="Navegação principal">
-      <button class="nav-toggle" type="button" aria-label="Abrir menu">
-        Menu
-      </button>
-      <ul class="nav-list">
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="primary-navigation">
+      Menu
+    </button>
+    <ul class="nav-list" id="primary-navigation">
+
         <li><a href="#inicio">Início</a></li>
         <li><a href="#escritorio">O Escritório</a></li>
         <li><a href="#atuacao">Áreas de atuação</a></li>
@@ -1274,6 +1280,7 @@ color: var(--color-muted);
 </script>
 </body>
 </html>
+
 
 
 
