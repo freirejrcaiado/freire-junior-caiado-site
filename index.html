@@ -1268,9 +1268,11 @@ color: var(--color-muted);
 
   if (navToggle && navList) {
     navToggle.addEventListener('click', () => {
-      navList.classList.toggle('nav-open');
+      const isOpen = navList.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
-  }
+   }
+
 
   // Ano automático no rodapé
   const yearSpan = document.getElementById('ano-atual');
@@ -1280,6 +1282,7 @@ color: var(--color-muted);
 </script>
 </body>
 </html>
+
 
 
 
