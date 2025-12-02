@@ -64,7 +64,7 @@
       display: block;
     }
 
-    /* Link de acessibilidade: pular para o conteúdo principal */
+    /* Link de pulo para o conteúdo principal (acessibilidade) */
     .skip-link {
       position: absolute;
       left: -9999px;
@@ -78,7 +78,7 @@
       text-decoration: none;
       box-shadow: 0 10px 30px rgba(15,23,42,0.35);
       z-index: 50;
-      border: 1px solid rgba(251,191,36,0.7); /* dourado discreto */
+      border: 1px solid rgba(251,191,36,0.7);
     }
 
     .skip-link:focus {
@@ -140,7 +140,7 @@
       color: #f9fafb;
       font-weight: 800;
     }
-
+    
     nav {
       display: flex;
       align-items: center;
@@ -629,7 +629,7 @@
     /* CONTATO */
     .contact-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr);
       gap: 2rem;
       align-items: flex-start;
     }
@@ -642,7 +642,7 @@
       box-shadow: 0 10px 26px rgba(15,23,42,0.04);
       font-size: 0.92rem;
       display: grid;
-      gap: 0.8rem;
+      gap: 1.2rem;
     }
 
     .contact-block strong {
@@ -652,23 +652,13 @@
       color: var(--color-muted);
     }
 
-    .contact-list {
-      list-style: none;
-      font-size: 0.9rem;
-      display: grid;
-      gap: 0.35rem;
-    }
-
-    .contact-list span {
-      font-weight: 600;
-    }
-
     .contact-form {
       background: var(--color-bg-alt);
       border-radius: var(--radius-lg);
       padding: 1.4rem 1.5rem 1.6rem;
       border: 1px solid rgba(209,213,219,0.9);
       font-size: 0.9rem;
+      box-shadow: 0 10px 26px rgba(15,23,42,0.04);
     }
 
     .contact-form-row {
@@ -788,7 +778,7 @@
   </style>
 </head>
 <body>
-  <a href="#inicio" class="skip-link">Pular para o conteúdo principal</a>
+  <a href="#inicio" class="skip-link" tabindex="1">Pular para o conteúdo principal</a>
 
   <header class="site-header">
     <div class="container nav-container">
@@ -1205,46 +1195,82 @@
         <header class="section-header">
           <p class="section-kicker">Contato</p>
           <h2 class="section-title" id="contato-title">Fale com o escritório</h2>
+          <p class="section-description">
+            As informações abaixo permitem contato direto com o escritório. O formulário pode ser utilizado para uma mensagem inicial, sem caráter de consulta jurídica formal.
+          </p>
         </header>
-
+  
         <div class="contact-grid">
-          <div>
-            <h3>Endereço</h3>
-            <p>
-              SAUS Quadra 6 · Bloco K · Edifício Belvedere · sala 1002<br>
-              Brasília-DF · 70070-915
-            </p>
+          <!-- Bloco informativo (esquerda) -->
+          <div class="contact-block">
+            <div>
+              <strong>Endereço</strong>
+              <p>
+                SAUS Quadra 6 · Bloco K · Edifício Belvedere · sala 1002<br>
+                Brasília-DF · 70070-915
+              </p>
+            </div>
 
-            <h3>Contato direto</h3>
-            <p>
-              E-mail:
-              <a href="mailto:freire@adv.br">freire@adv.br</a>
-            </p>
-            <p>
-              Telefone fixo:
-              <a href="tel:+556132732554">+55 61 3273-2554</a>
-            </p>
-            <p>
-              Celular / WhatsApp:
-              <a href="https://wa.me/5561981732554" target="_blank" rel="noopener noreferrer">
-                +55 61 98173-2554
-              </a>
-            </p>
-
-            <h3>Redes</h3>
-            <p>
-              LinkedIn:
-              <a href="https://www.linkedin.com/in/freire" target="_blank" rel="noopener noreferrer">
-                @freire
-              </a>
-            </p>
-            <p>
-              Instagram:
-              <a href="https://www.instagram.com/freire" target="_blank" rel="noopener noreferrer">
-                @freire
-              </a>
-            </p>
+            <div>
+              <strong>Contato direto</strong>
+              <p>
+                E-mail:
+                <a href="mailto:freire@adv.br">freire@adv.br</a>
+              </p>
+              <p>
+                Telefone fixo:
+                <a href="tel:+556132732554">+55 61 3273-2554</a>
+              </p>
+              <p>
+                Celular / WhatsApp:
+                <a href="https://wa.me/5561981732554" target="_blank" rel="noopener noreferrer">
+                  +55 61 98173-2554
+                </a>
+              </p>
+            </div>
+    
+            <div>
+              <strong>Redes</strong>
+              <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/freire" target="_blank" rel="noopener noreferrer">
+                  @freire
+                </a>
+              </p>
+              <p>
+                Instagram:
+                <a href="https://www.instagram.com/freire" target="_blank" rel="noopener noreferrer">
+                  @freire
+                </a>
+              </p>
+            </div>
           </div>
+
+          <!-- Formulário visual (direita) -->
+          <form class="contact-form" action="mailto:freire@adv.br" method="post">
+            <div class="contact-form-row">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" autocomplete="name">
+            </div>
+            <div class="contact-form-row">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+            </div>
+            <div class="contact-form-row">
+              <label for="assunto">Assunto</label>
+              <input type="text" id="assunto" name="assunto">
+            </div>
+            <div class="contact-form-row">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem"></textarea>
+              <small>
+                O envio desta mensagem não implica aceitação automática do patrocínio da causa, nem substitui consulta jurídica formal.
+              </small>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar mensagem
+            </button>
+          </form>
         </div>
       </div>
     </section>
@@ -1256,7 +1282,7 @@
         © <span id="ano-atual"></span> Freire Júnior Caiado - Advocacia e Consultoria · Brasília/DF.
       </div>
       <div class="footer-note">
-        Este site tem caráter exclusivamente informativo, em conformidade com o Estatuto da Advocacia e da OAB, em especial as seccionais DF e BA.
+        Este site tem caráter exclusivamente informativo, em conformidade com o Estatuto da Advocacia e da OAB, em especial as seccionais DF e BA. 
         Não há oferta de serviços pela internet, nem promessa de resultado em processos judiciais ou administrativos.
       </div>
     </div>
