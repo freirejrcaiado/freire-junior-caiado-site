@@ -2,27 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Freire Júnior Caiado - Advocacy and Legal Consultancy | Public Law, State-Owned Enterprises and Strategic Litigation</title>
+  <title>Freire Júnior Caiado - Law Firm and Legal Consultancy | Administrative Law, State-Owned Companies and Strategic Litigation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Law firm based in Brasília since 1997, focused on Public Law, state-owned enterprises, governance, strategic civil litigation, corporate law, M&A and medical and hospital law.">
+  <meta name="description" content="Law firm and legal consultancy based in Brasília since 1997, focused on Administrative Law, state-owned companies, governance, strategic civil litigation, Corporate Law, M&A and Medical and Hospital Law.">
   <link rel="canonical" href="https://freirejrcaiado.github.io/freire-junior-caiado-site/index-en.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-  <!-- Open Graph -->
+  <!-- Open Graph (for WhatsApp, LinkedIn, etc.) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Freire Júnior Caiado - Advocacy and Legal Consultancy">
-  <meta property="og:description" content="Technical advocacy and legal advisory services in complex matters involving Public Law, state-owned enterprises, governance, strategic litigation and medical and hospital law.">
+  <meta property="og:title" content="Freire Júnior Caiado - Law Firm and Legal Consultancy">
+  <meta property="og:description" content="Technical advocacy and legal consultancy in complex matters of Administrative Law, state-owned companies, governance, strategic litigation and Medical and Hospital Law.">
   <meta property="og:url" content="https://freirejrcaiado.github.io/freire-junior-caiado-site/index-en.html">
-  <meta property="og:site_name" content="Freire Júnior Caiado - Advocacy and Legal Consultancy">
-  <!-- When you have a specific image (logo or institutional photo), replace the content below with the real URL -->
-  <!-- <meta property="og:image" content="https://YOUR-DOMAIN/images/og-image-en.jpg"> -->
+  <meta property="og:site_name" content="Freire Júnior Caiado - Law Firm and Legal Consultancy">
   <meta property="og:image" content="https://freirejrcaiado.github.io/freire-junior-caiado-site/og-freirejcaiado.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Freire Júnior Caiado - Advocacy and Legal Consultancy">
-  <meta name="twitter:description" content="Brasília-based law firm since 1997, focused on Public Law, state-owned enterprises, governance, strategic litigation and medical and hospital law.">
-  <!-- <meta name="twitter:image" content="https://YOUR-DOMAIN/images/og-image-en.jpg"> -->
+  <meta name="twitter:title" content="Freire Júnior Caiado - Law Firm and Legal Consultancy">
+  <meta name="twitter:description" content="Law firm based in Brasília since 1997, with focus on Administrative Law, state-owned companies, governance, strategic litigation and Medical and Hospital Law.">
   <meta name="twitter:image" content="https://freirejrcaiado.github.io/freire-junior-caiado-site/og-freirejcaiado.png">
 
   <style>
@@ -30,8 +27,8 @@
       --color-bg: #f5f5f7;
       --color-bg-alt: #ffffff;
       --color-primary: #020617;
-      --color-secondary: #1d4ed8;
-      --color-accent: #fbbf24;
+      --color-secondary: #1d4ed8; /* institutional blue */
+      --color-accent: #fbbf24;    /* discreet gold */
       --color-muted: #6b7280;
       --color-border: #e5e7eb;
       --shadow-soft: 0 14px 45px rgba(15, 23, 42, 0.16);
@@ -51,7 +48,7 @@
     }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", -apple-system, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
       background: radial-gradient(circle at top, #e5e7eb 0, #f5f5f7 40%, #e5e7eb 100%);
       color: var(--color-primary);
@@ -65,6 +62,29 @@
     img {
       max-width: 100%;
       display: block;
+    }
+
+    /* Accessibility: skip link */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      padding: 0.6rem 1rem;
+      background: linear-gradient(135deg, #1d4ed8, #0f172a);
+      color: #f9fafb;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(15,23,42,0.35);
+      z-index: 50;
+      border: 1px solid rgba(251,191,36,0.7);
+    }
+
+    .skip-link:focus {
+      left: 1rem;
+      top: 0.75rem;
+      outline: none;
     }
 
     .container {
@@ -127,6 +147,15 @@
       gap: 1.5rem;
     }
 
+    .lang-switch {
+      font-size: 0.8rem;
+      color: var(--color-muted);
+    }
+
+    .lang-switch a {
+      font-weight: 500;
+    }
+
     .nav-list {
       list-style: none;
       display: flex;
@@ -137,7 +166,7 @@
     .nav-list a {
       position: relative;
       padding-bottom: 0.2rem;
-      white-space: nowrap; /* impede quebra de linha dentro dos itens do menu */
+      white-space: nowrap;
     }
 
     .nav-list a::after {
@@ -160,20 +189,10 @@
       display: none;
       background: transparent;
       border: 1px solid var(--color-border);
-      border-radius: var(--radius-full);
+      border-radius: 999px;
       padding: 0.35rem 0.75rem;
       font-size: 0.9rem;
       cursor: pointer;
-    }
-
-    /* Language switch (simple text link for now) */
-    .lang-switch {
-      font-size: 0.8rem;
-      color: var(--color-muted);
-    }
-
-    .lang-switch a {
-      font-weight: 500;
     }
 
     /* HERO */
@@ -387,11 +406,13 @@
       margin: 2rem 0 1rem;
     }
 
-    section[id] {
+    /* Smooth anchor offset */
+    section[id],
+    main[id] {
       scroll-margin-top: 80px;
     }
 
-    /* ABOUT */
+    /* ABOUT THE FIRM */
     .about-grid {
       display: grid;
       grid-template-columns: minmax(0, 3fr) minmax(0, 2.3fr);
@@ -540,7 +561,7 @@
       margin-bottom: 0.4rem;
     }
 
-    /* DIFFERENTIATORS */
+    /* DIFFERENTIALS */
     .pill-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -607,7 +628,7 @@
     /* CONTACT */
     .contact-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr);
+      grid-template-columns: minmax(0, 1fr);
       gap: 2rem;
       align-items: flex-start;
     }
@@ -627,65 +648,6 @@
       font-size: 0.82rem;
       text-transform: uppercase;
       letter-spacing: 0.16em;
-      color: var(--color-muted);
-    }
-
-    .contact-list {
-      list-style: none;
-      font-size: 0.9rem;
-      display: grid;
-      gap: 0.35rem;
-    }
-
-    .contact-list span {
-      font-weight: 600;
-    }
-
-    .contact-form {
-      background: var(--color-bg-alt);
-      border-radius: var(--radius-lg);
-      padding: 1.4rem 1.5rem 1.6rem;
-      border: 1px solid rgba(209,213,219,0.9);
-      font-size: 0.9rem;
-    }
-
-    .contact-form-row {
-      display: grid;
-      gap: 0.4rem;
-      margin-bottom: 0.7rem;
-    }
-
-    .contact-form label {
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--color-muted);
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      border-radius: 12px;
-      border: 1px solid rgba(209,213,219,0.9);
-      padding: 0.55rem 0.7rem;
-      font-family: inherit;
-      font-size: 0.9rem;
-      background: #fff;
-      outline: none;
-      transition: border-color 0.12s ease-out, box-shadow 0.12s ease-out;
-    }
-
-    .contact-form textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
-
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      border-color: #2563eb;
-      box-shadow: 0 0 0 1px rgba(37,99,235,0.2);
-    }
-
-    .contact-form small {
-      font-size: 0.75rem;
       color: var(--color-muted);
     }
 
@@ -755,10 +717,6 @@
         align-items: center;
         gap: 0.35rem;
       }
-
-      .lang-switch {
-        display: none; /* se quiser, esconda o switch no mobile ou mova para o menu */
-      }
     }
 
     @media (max-width: 480px) {
@@ -770,497 +728,504 @@
   </style>
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav-container">
-    <div class="logo">
-      <div class="logo-mark">FJ</div>
-      <span>Freire Júnior Caiado - Advocacy and Legal Consultancy</span>
-    </div>
-    <nav aria-label="Main navigation">
-      <button class="nav-toggle" type="button" aria-label="Open menu">
-        Menu
-      </button>
-      <ul class="nav-list">
-        <li><a href="#start">Home</a></li>
-        <li><a href="#firm">The Firm</a></li>
-        <li><a href="#practice">Practice areas</a></li>
-        <li><a href="#differentials">Approach</a></li>
-        <li><a href="#insights">Insights</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="lang-switch">
-      EN · <a href="index.html">PT</a>
-    </div>
-  </div>
-</header>
+  <a href="#home" class="skip-link">Skip to main content</a>
 
-<main id="start">
-  <!-- HERO -->
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="container hero-content">
-      <div>
-        <p class="hero-tag">
-          <span></span> Since 1997 · Brasília · Advocacy and Legal Consultancy
-        </p>
-        <h1 class="hero-title" id="hero-title">
-          Freire Júnior Caiado - Advocacy and Legal Consultancy
-        </h1>
-        <p class="hero-subtitle">
-          Law firm based in Brasília, Brazil, acting since 1997 in Public Law, state-owned enterprises and governance,
-          strategic civil and business litigation, corporate law, M&A and legal advisory on complex matters.
-        </p>
-        <p class="language-note">
-          Service in Portuguese, English and Spanish.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">
-            Contact the firm
-          </a>
-          <a href="#practice" class="btn btn-ghost">
-            View practice areas
-          </a>
-        </div>
-        <div class="hero-meta">
-          <span>Practising since 1997 in Brasília</span>
-          <span>Office at SAUS Quadra 6, Ed. Belvedere, Brasília-DF</span>
-          <span>Neutral and technical stance regarding public sector and private clients</span>
-        </div>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <div class="logo-mark">FJ</div>
+        <span>Freire Júnior Caiado - Law Firm and Legal Consultancy</span>
       </div>
-
-      <aside class="hero-panel" aria-label="Firm highlights">
-        <div class="hero-panel-inner">
-          <div>
-            <div class="hero-panel-heading">Positioning</div>
-            <div class="hero-panel-title">
-              Technical, corporate and strategic advocacy.
-            </div>
-            <ul class="hero-panel-list">
-              <li>Public Law, public procurement and administrative contracts.</li>
-              <li>State-owned enterprises, governance and integrity.</li>
-              <li>Strategic civil and business litigation.</li>
-              <li>Corporate Law, M&A and Economic Criminal Law.</li>
-              <li>Advocacy before Superior Courts and Audit Courts.</li>
-            </ul>
-          </div>
-          <p class="hero-panel-note">
-            This website is strictly informational and complies with the rules of the Brazilian Bar Association
-            (OAB). It does not offer guarantees of results or solicit clients in violation of professional ethics.
-          </p>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- THE FIRM -->
-  <section id="firm" class="section">
-    <div class="container">
-      <header class="section-header">
-        <p class="section-kicker">The Firm</p>
-        <h2 class="section-title">Public Law and Corporate practice since 1997</h2>
-        <p class="section-description">
-          Based in Brasília, the firm focuses on complex legal matters that require careful analysis, institutional
-          understanding and a strategic approach.
-        </p>
-      </header>
-
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Founded in 1997, the firm has developed a practice focused on solving issues involving Public Law,
-            state-owned enterprises, public contracts, strategic civil litigation, Corporate Law, M&A and governance.
-          </p>
-          <p>
-            The work combines technical rigour, a systemic reading of the legal framework and constant dialogue with
-            court precedents, especially those of Brazil’s Superior Courts and Audit Courts, while remaining attentive
-            to the institutional and business reality of clients.
-          </p>
-          <p>
-            The firm maintains a calm, discreet and objective posture, with clear and realistic communication on risks,
-            alternatives and available legal strategies, always in strict compliance with Brazilian Bar rules.
-          </p>
-
-          <div class="about-bio">
-            <h3>About the partner</h3>
-            <p>
-              The firm is led by <strong>Edval Freire Jr. Caiado</strong>, a corporate lawyer and legal opinion writer
-              (parecerista), practising since 1997 in Public and Private Law. Over the years, he has built experience in
-              complex contracts, governance, regulatory matters, strategic litigation and advisory work for companies
-              and institutions.
-            </p>
-            <p>
-              With an interdisciplinary background, he brings together legal technique and an understanding of
-              economic and management dynamics in both the public and private sectors, providing consistent analysis
-              grounded in precedents, respected scholarship and sound governance practices.
-            </p>
-            <ul class="about-bio-list">
-              <li>Corporate Lawyer and Legal Opinion Writer (parecerista).</li>
-              <li>Specialist in Private Law (UNEB).</li>
-              <li>MBA in Public Sector Management and Economics (USP).</li>
-              <li>Experience in advisory and strategic litigation in several Brazilian states.</li>
-            </ul>
-          </div>
-        </div>
-
-        <ul class="timeline" aria-label="Firm timeline">
-          <li class="timeline-item">
-            <div class="timeline-year">1997</div>
-            <div class="timeline-title">Start of practice</div>
-            <div>
-              Establishment of the firm in Brasília, initially focused on Civil, Business and Administrative Law.
-            </div>
-          </li>
-          <li class="timeline-item">
-            <div class="timeline-year">2000–2010</div>
-            <div class="timeline-title">Public contracts and state-owned enterprises</div>
-            <div>
-              Increased experience in public procurement, administrative contracts and matters involving state-owned
-              enterprises and partnerships with the public sector.
-            </div>
-          </li>
-          <li class="timeline-item">
-            <div class="timeline-year">2010–2020</div>
-            <div class="timeline-title">Governance and strategic litigation</div>
-            <div>
-              Consolidation of work in governance, integrity, Corporate Law, strategic civil litigation and advocacy
-              before Brazil’s Superior Courts.
-            </div>
-          </li>
-          <li class="timeline-item">
-            <div class="timeline-year">Present</div>
-            <div class="timeline-title">Integrated advocacy and consultancy</div>
-            <div>
-              Integrated work in litigation, legal consultancy and formal legal opinions, with service in Portuguese,
-              English and Spanish and a neutral approach regarding public entities and private clients.
-            </div>
-          </li>
+      <nav aria-label="Main navigation">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation">
+          Menu
+        </button>
+        <ul class="nav-list" id="primary-navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#firm">The Firm</a></li>
+          <li><a href="#practice-areas">Practice areas</a></li>
+          <li><a href="#differentials">Differentials</a></li>
+          <li><a href="#content">Content</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+      <div class="lang-switch">
+        EN · <a href="index.html">PT</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- PRACTICE AREAS -->
-  <section id="practice" class="section section-alt" aria-labelledby="practice-title">
-    <div class="container">
-      <header class="section-header">
-        <p class="section-kicker">Practice areas</p>
-        <h2 class="section-title" id="practice-title">Focus on complex legal matters</h2>
-        <p class="section-description">
-          The firm’s practice areas reflect its work in Public Law, Corporate Law and related fields, with an emphasis
-          on strategic analysis and governance.
-        </p>
-      </header>
-
-      <!-- Priority areas -->
-      <div class="priority-grid">
-        <article class="priority-card">
-          <div class="priority-chip">Priority area</div>
-          <h3>Public Law (procurement and contracts)</h3>
-          <p>
-            Work in public procurement, administrative contracts, economic rebalance claims, sanctions and related
-            topics in the relationship between public entities and private parties.
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero" aria-labelledby="hero-title" tabindex="-1">
+      <div class="container hero-content">
+        <div>
+          <p class="hero-tag">
+            <span></span> Since 1997 · Brasília · Law Firm and Consultancy
           </p>
-        </article>
-
-        <article class="priority-card">
-          <div class="priority-chip">Priority area</div>
-          <h3>State-owned enterprises and governance</h3>
-          <p>
-            Advisory and litigation involving state-owned enterprises, hybrid legal regimes, governance, compliance,
-            directors’ liability and interaction with oversight bodies.
+          <h1 class="hero-title" id="hero-title">
+            Freire Júnior Caiado - Law Firm and Legal Consultancy
+          </h1>
+          <p class="hero-subtitle">
+            Law firm and legal consultancy based in Brasília, operating since 1997 in Administrative Law,
+            state-owned companies and governance, strategic civil and business litigation, Corporate Law,
+            M&A and advisory work in complex legal matters.
           </p>
-        </article>
-
-        <article class="priority-card">
-          <div class="priority-chip">Priority area</div>
-          <h3>Strategic civil litigation</h3>
-          <p>
-            Representation in significant civil and business disputes, with focus on legal theory, technical evidence,
-            risk management and alignment with court precedents.
+          <p class="language-note">
+            Services available in Portuguese, English and Spanish.
           </p>
-        </article>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Contact the firm
+            </a>
+            <a href="#practice-areas" class="btn btn-ghost">
+              View practice areas
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span>Practice started in 1997</span>
+            <span>Head office at SAUS Quadra 6, Ed. Belvedere, Brasília-DF</span>
+            <span>Neutral and technical approach regarding the Public Sector and private clients</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Firm highlights">
+          <div class="hero-panel-inner">
+            <div>
+              <div class="hero-panel-heading">Positioning</div>
+              <div class="hero-panel-title">
+                Technical, corporate and strategic advocacy.
+              </div>
+              <ul class="hero-panel-list">
+                <li>Administrative Law, public procurement and contracts.</li>
+                <li>State-owned enterprises, governance and integrity.</li>
+                <li>Strategic civil and business litigation.</li>
+                <li>Corporate Law, M&A and Economic Criminal Law.</li>
+                <li>Work before Superior Courts and Audit Courts.</li>
+              </ul>
+            </div>
+            <p class="hero-panel-note">
+              This website is strictly informational, in compliance with the Brazilian Bar Association’s ethical rules,
+              without any promise of results or improper client solicitation.
+            </p>
+          </div>
+        </aside>
       </div>
+    </section>
 
-      <h3 class="section-subtitle">Related practice areas</h3>
-
-      <div class="cards-grid">
-        <article class="card">
-          <div class="chip">Legal Opinions & Advisory</div>
-          <h3>Public Law opinions and advisory work</h3>
-          <p>
-            Drafting of legal opinions and technical memoranda in Administrative and Constitutional Law, as well as
-            advisory work for executives, boards and collegiate bodies.
+    <!-- THE FIRM -->
+    <section id="firm" class="section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">The Firm</p>
+          <h2 class="section-title">Background in Public and Corporate Law since 1997</h2>
+          <p class="section-description">
+            Based in Brasília, the firm focuses on complex legal matters that require careful analysis,
+            institutional awareness and strategic treatment.
           </p>
-        </article>
+        </header>
 
-        <article class="card">
-          <div class="chip">Audit Courts</div>
-          <h3>Work before the Federal Audit Court (TCU)</h3>
-          <p>
-            Representation in cases before the Federal Court of Accounts (TCU), including defence briefs, monitoring of
-            special account proceedings, analysis of decisions and strategic guidance in light of case law.
-          </p>
-        </article>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Established in 1997, the firm has developed a practice oriented to solving issues involving
+              Administrative Law, state-owned companies, public contracts, strategic civil litigation,
+              Corporate Law, M&A and governance.
+            </p>
+            <p>
+              The work combines technical rigor, a systemic reading of the legal framework and constant dialogue
+              with case law, especially from the Superior Courts and Audit Courts, without losing sight of the
+              clients’ business and institutional reality.
+            </p>
+            <p>
+              The firm adopts a calm, discreet and objective stance, with clear and realistic communication
+              about risks, alternatives and available legal paths, always in strict compliance with Bar Association standards.
+            </p>
 
-        <article class="card">
-          <div class="chip">Corporate Law</div>
-          <h3>Corporate Law</h3>
-          <p>
-            Structuring and monitoring of corporate transactions, business contracts, corporate governance, shareholders’
-            agreements and related matters.
-          </p>
-        </article>
+            <div class="about-bio">
+              <h3>About the partner</h3>
+              <p>
+                The firm is led by <strong>Edval Freire Jr. Caiado</strong>, corporate lawyer and legal opinion writer,
+                with experience since 1997 in matters of Public and Private Law. Over the years, he has consolidated
+                expertise in complex contracts, governance, regulatory issues, strategic litigation and advisory work
+                for companies and institutions.
+              </p>
+              <p>
+                With an interdisciplinary background, Edval combines sound legal technique with a clear understanding
+                of the economic and management dynamics of both the public and private sectors, providing consistent
+                analyses grounded in case law, qualified scholarship and good governance practices.
+              </p>
+              <ul class="about-bio-list">
+                <li>Corporate Lawyer and Legal Opinion Writer.</li>
+                <li>Specialist in Private Law (UNEB).</li>
+                <li>MBA in Public Sector Management and Economics (USP).</li>
+                <li>Advisory and strategic litigation work in several Brazilian states.</li>
+              </ul>
+            </div>
+          </div>
 
-        <article class="card">
-          <div class="chip">M&A</div>
-          <h3>Mergers and Acquisitions (M&A)</h3>
-          <p>
-            Legal assistance in M&A transactions, including risk assessment, contractual arrangements, due diligence and
-            regulatory aspects.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="chip">Economic Criminal Law</div>
-          <h3>Economic and Business Criminal Law</h3>
-          <p>
-            Work in investigations and proceedings involving economic offences, crimes against the public administration,
-            the market and the economic order, always in close interface with business reality.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="chip">Compliance</div>
-          <h3>Compliance</h3>
-          <p>
-            Support in implementing and reviewing integrity programs, risk management structures, internal policies and
-            mechanisms for preventing and responding to irregularities.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="chip">Agribusiness</div>
-          <h3>Agribusiness Law</h3>
-          <p>
-            Work in contracts, guarantees, financing and structured operations related to agribusiness, including
-            dealings with public policies and rural credit.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="chip">Medical Law</div>
-          <h3>Medical and Hospital Law</h3>
-          <p>
-            Advisory and litigation in matters involving physicians, other health professionals, hospitals, clinics and
-            health plan operators, including civil liability, contracts, health regulation, medical records and
-            professional confidentiality, with a technical and evidence-focused approach.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="chip">Real Estate & Registry</div>
-          <h3>Real Estate and Registry Law</h3>
-          <p>
-            Advisory and litigation in public registries, real estate regularisation, purchase and sale agreements,
-            leases, security interests and related matters.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="chip">Superior Courts</div>
-          <h3>Advocacy before Superior Courts</h3>
-          <p>
-            Drafting of briefs, legal opinions and strategies for appeals and actions before Brazil’s Superior Courts,
-            with attention to precedent formation and application.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- APPROACH -->
-  <section id="differentials" class="section">
-    <div class="container">
-      <header class="section-header">
-        <p class="section-kicker">Approach</p>
-        <h2 class="section-title">How the firm operates</h2>
-        <p class="section-description">
-          Litigation and legal advisory work are conducted in an integrated way, with focus on clarity, predictability
-          and strict respect for professional ethics.
-        </p>
-      </header>
-
-      <div class="pill-grid">
-        <div class="pill">
-          <div class="pill-icon">✓</div>
-          <span>Work grounded in court precedents, respected scholarship and an institutional reading of the justice system.</span>
-        </div>
-        <div class="pill">
-          <div class="pill-icon">✓</div>
-          <span>Integrated view of Public Law, Private Law, governance and corporate realities.</span>
-        </div>
-        <div class="pill">
-          <div class="pill-icon">✓</div>
-          <span>Technical yet accessible communication, with clear explanations and no promises of specific results.</span>
-        </div>
-        <div class="pill">
-          <div class="pill-icon">✓</div>
-          <span>Service in Portuguese, English and Spanish, according to client needs.</span>
-        </div>
-        <div class="pill">
-          <div class="pill-icon">✓</div>
-          <span>Discrete posture and neutrality regarding public entities and private clients, focusing on legal solutions.</span>
-        </div>
-        <div class="pill">
-          <div class="pill-icon">✓</div>
-          <span>Commitment to ethics, professional secrecy and compliance with Brazilian Bar Association (OAB) rules.</span>
+          <ul class="timeline" aria-label="Firm timeline">
+            <li class="timeline-item">
+              <div class="timeline-year">1997</div>
+              <div class="timeline-title">Start of activities</div>
+              <div>
+                Establishment of the firm in Brasília, initially focused on Civil, Business and Administrative Law.
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-year">2000–2010</div>
+              <div class="timeline-title">Contracts and state-owned companies</div>
+              <div>
+                Increasing engagement in public procurement, administrative contracts and matters involving
+                state-owned companies and public-private partnerships.
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-year">2010–2020</div>
+              <div class="timeline-title">Governance and strategic litigation</div>
+              <div>
+                Consolidation of experience in governance, integrity, Corporate Law, strategic civil litigation
+                and work before Superior Courts.
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-year">Present</div>
+              <div class="timeline-title">Integrated advocacy and consultancy</div>
+              <div>
+                Integrated work in litigation, legal consultancy and legal opinions, with services in Portuguese,
+                English and Spanish, and a neutral approach regarding public entities and private clients.
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- INSIGHTS -->
-  <section id="insights" class="section section-alt">
-    <div class="container">
-      <header class="section-header">
-        <p class="section-kicker">Insights & Publications</p>
-        <h2 class="section-title">Introductory texts and reflections</h2>
-        <p class="section-description">
-          Below are three introductory texts, which may be kept as a basis or replaced with future articles.
-        </p>
-      </header>
+    <!-- PRACTICE AREAS -->
+    <section id="practice-areas" class="section section-alt" aria-labelledby="practice-areas-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Practice areas</p>
+          <h2 class="section-title" id="practice-areas-title">Focus on complex legal matters</h2>
+          <p class="section-description">
+            The practice areas below reflect the firm’s work in Administrative Law, Corporate Law and related fields,
+            with emphasis on strategic analysis and governance.
+          </p>
+        </header>
 
-      <div class="content-grid">
-        <article class="post">
-          <div class="post-tag">Introductory</div>
-          <div class="post-title">Why legal analysis needs to be strategic</div>
-          <p>
-            In complex matters, it is not enough to apply legal provisions in isolation. An integrated reading of rules,
-            precedents and economic context is essential so that legal advice is effective and actually reduces risk
-            for both businesses and public institutions.
-          </p>
-          <p class="post-note">
-            Introductory text on the firm’s positioning. It may be replaced with a future article.
-          </p>
-        </article>
+        <!-- Priority areas -->
+        <div class="priority-grid">
+          <article class="priority-card">
+            <div class="priority-chip">Priority area</div>
+            <h3>Administrative Law (public procurement and contracts)</h3>
+            <p>
+              Work in public procurement, administrative contracts, economic and financial rebalancing,
+              sanctions and other issues related to the relationship between the Public Administration and private parties.
+            </p>
+          </article>
 
-        <article class="post">
-          <div class="post-tag">Introductory</div>
-          <div class="post-title">State-owned enterprises, governance and accountability</div>
-          <p>
-            Strengthening governance and integrity in state-owned enterprises is not only a regulatory requirement. It
-            is a condition for safer decision-making, greater transparency and a better relationship with oversight
-            bodies and society at large.
-          </p>
-          <p class="post-note">
-            Introductory text on governance and integrity, aligned with the firm’s practice.
-          </p>
-        </article>
+          <article class="priority-card">
+            <div class="priority-chip">Priority area</div>
+            <h3>State-owned companies and governance</h3>
+            <p>
+              Advisory and litigation work in matters involving state-owned enterprises, hybrid legal regimes,
+              governance, compliance, liability of managers and interaction with oversight bodies.
+            </p>
+          </article>
 
-        <article class="post">
-          <div class="post-tag">Introductory</div>
-          <div class="post-title">Litigation as an extension of legal advisory work</div>
-          <p>
-            Judicial and administrative proceedings tend to be more consistent when they are built upon well-structured
-            advisory work. Building the legal theory from the outset, supported by proper documentation and precedents,
-            usually leads to more predictable and robust outcomes over time.
-          </p>
-          <p class="post-note">
-            Text illustrating how the firm articulates advisory work and litigation.
-          </p>
-        </article>
+          <article class="priority-card">
+            <div class="priority-chip">Priority area</div>
+            <h3>Strategic civil litigation</h3>
+            <p>
+              Representation in relevant civil and business disputes, with focus on legal theory, technical evidence,
+              risk management and alignment with court precedents.
+            </p>
+          </article>
+        </div>
+
+        <h3 class="section-subtitle">Other related areas</h3>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="chip">Legal opinions and advisory</div>
+            <h3>Legal opinions and advisory in Public Law</h3>
+            <p>
+              Preparation of legal opinions and technical memoranda in Administrative and Constitutional Law,
+              as well as advisory work for directors, boards and collegiate bodies.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="chip">Audit Court</div>
+            <h3>Work before the Federal Court of Accounts (TCU)</h3>
+            <p>
+              Representation in proceedings before the Federal Court of Accounts, with focus on technical defense,
+              monitoring of special account proceedings, analysis of decisions and strategic guidance based on case law.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="chip">Corporate Law</div>
+            <h3>Corporate Law</h3>
+            <p>
+              Structuring and monitoring of corporate transactions, business contracts, corporate governance,
+              shareholders’ agreements and related issues.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="chip">M&A</div>
+            <h3>Mergers and Acquisitions (M&A)</h3>
+            <p>
+              Legal advice in M&A transactions, including risk analysis, contracts, due diligence and
+              relevant regulatory aspects.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="chip">Economic Criminal Law</div>
+            <h3>Economic and Corporate Criminal Law</h3>
+            <p>
+              Work in investigations and proceedings involving economic offenses, crimes against the Public Administration,
+              the market and economic order, always considering the corporate context.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="chip">Compliance</div>
+            <h3>Compliance</h3>
+            <p>
+              Support in implementing and reviewing integrity programs, risk management structures, internal policies
+              and mechanisms for preventing and responding to irregularities.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="chip">Agribusiness</div>
+            <h3>Agribusiness Law</h3>
+            <p>
+              Work in agreements, guarantees, financing and structured transactions in the agribusiness sector,
+              including interfaces with public policies and rural credit.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="chip">Medical Law</div>
+            <h3>Medical and Hospital Law</h3>
+            <p>
+              Advisory and litigation work in matters involving physicians and other health professionals, hospitals,
+              clinics and health plan operators, including civil liability, contractual issues, sanitary regulation,
+              medical records and professional secrecy, always with a careful and technical approach to evidence.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="chip">Real Estate and Registries</div>
+            <h3>Real Estate and Registry Law</h3>
+            <p>
+              Advisory and litigation work concerning public registries, real estate regularization, purchase and sale
+              agreements, leases, security interests and related matters.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="chip">Superior Courts</div>
+            <h3>Work before Superior Courts</h3>
+            <p>
+              Drafting of briefs, legal opinions and strategies for cases before the Brazilian Superior Courts,
+              with attention to precedent formation and application.
+            </p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section" aria-labelledby="contact-title">
-  <div class="container">
-    <header class="section-header">
-      <p class="section-kicker">Contact</p>
-      <h2 class="section-title" id="contact-title">Get in touch</h2>
-    </header>
+    <!-- DIFFERENTIALS -->
+    <section id="differentials" class="section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Differentials</p>
+          <h2 class="section-title">How the firm positions itself</h2>
+          <p class="section-description">
+            Litigation and consultancy are conducted in an integrated manner, with emphasis on clarity,
+            predictability and strict observance of professional ethics.
+          </p>
+        </header>
 
-    <div class="contact-grid">
+        <div class="pill-grid">
+          <div class="pill">
+            <div class="pill-icon">✓</div>
+            <span>Work grounded in case law, qualified scholarship and an institutional reading of the justice system.</span>
+          </div>
+          <div class="pill">
+            <div class="pill-icon">✓</div>
+            <span>Integrated view of Public Law, Private Law, governance and corporate reality.</span>
+          </div>
+          <div class="pill">
+            <div class="pill-icon">✓</div>
+            <span>Technical yet accessible communication, with clear explanations and no promises of outcome.</span>
+          </div>
+          <div class="pill">
+            <div class="pill-icon">✓</div>
+            <span>Services in Portuguese, English and Spanish, as needed by the client.</span>
+          </div>
+          <div class="pill">
+            <div class="pill-icon">✓</div>
+            <span>Discreet posture and a neutral approach regarding public entities and private parties, focused on legal solutions.</span>
+          </div>
+          <div class="pill">
+            <div class="pill-icon">✓</div>
+            <span>Commitment to ethics, professional secrecy and compliance with Brazilian Bar Association rules.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section id="content" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Content & Publications</p>
+          <h2 class="section-title">Texts and reflections by the firm</h2>
+          <p class="section-description">
+            Below are three introductory texts that may be kept as a base or later replaced by future articles.
+          </p>
+        </header>
+
+        <div class="content-grid">
+          <article class="post">
+            <div class="post-tag">Introductory text</div>
+            <div class="post-title">Why legal analysis needs to be strategic</div>
+            <p>
+              In complex matters, it is not enough to apply isolated provisions. An integrated reading of legal rules,
+              precedents and the economic context is essential for legal advice to be effective and to reduce risks
+              for companies and public institutions.
+            </p>
+            <p class="post-note">
+              Introductory text about the firm’s positioning. May be replaced by a future article.
+            </p>
+          </article>
+
+          <article class="post">
+            <div class="post-tag">Introductory text</div>
+            <div class="post-title">State-owned companies, governance and accountability</div>
+            <p>
+              Strengthening governance and integrity in state-owned companies is not only a legal requirement.
+              It is also a condition for safer decision-making, transparency and a better relationship with
+              oversight bodies and society.
+            </p>
+            <p class="post-note">
+              Introductory text on governance and integrity, aligned with the firm’s practice.
+            </p>
+          </article>
+
+          <article class="post">
+            <div class="post-tag">Introductory text</div>
+            <div class="post-title">Litigation as an extension of legal advisory work</div>
+            <p>
+              Judicial and administrative proceedings benefit from solid advisory work. Building the legal theory
+              from the outset, with robust documentation and attention to precedents, tends to produce more consistent
+              and predictable results over time.
+            </p>
+            <p class="post-note">
+              Text illustrating how litigation and consultancy are integrated in the firm’s work.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Contact</p>
+          <h2 class="section-title" id="contact-title">Contact the firm</h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-block">
+            <div>
+              <strong>Address</strong>
+              <p>
+                SAUS Quadra 6 · Block K · Edifício Belvedere · Suite 1002<br>
+                Brasília-DF · 70070-915 · Brazil
+              </p>
+            </div>
+
+            <div>
+              <strong>Direct contact</strong>
+              <p>
+                E-mail:
+                <a href="mailto:freire@adv.br">freire@adv.br</a>
+              </p>
+              <p>
+                Landline:
+                <a href="tel:+556132732554">+55 61 3273-2554</a>
+              </p>
+              <p>
+                Mobile / WhatsApp:
+                <a href="https://wa.me/5561981732554" target="_blank" rel="noopener noreferrer">
+                  +55 61 98173-2554
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <strong>Social</strong>
+              <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/freire" target="_blank" rel="noopener noreferrer">
+                  @freire
+                </a>
+              </p>
+              <p>
+                Instagram:
+                <a href="https://www.instagram.com/freire" target="_blank" rel="noopener noreferrer">
+                  @freire
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
       <div>
-        <h3>Office address</h3>
-        <p>
-          SAUS Quadra 6 · Bloco K · Edifício Belvedere · Suite 1002<br>
-          Brasília-DF · 70070-915 · Brazil
-        </p>
-
-        <h3>Direct contact</h3>
-        <p>
-          E-mail:
-          <a href="mailto:freire@adv.br">freire@adv.br</a>
-        </p>
-        <p>
-          Landline:
-          <a href="tel:+556132732554">+55 61 3273-2554</a>
-        </p>
-        <p>
-          Mobile / WhatsApp:
-          <a href="https://wa.me/5561981732554" target="_blank" rel="noopener noreferrer">
-            +55 61 98173-2554
-          </a>
-        </p>
-
-        <h3>Social</h3>
-        <p>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/freire" target="_blank" rel="noopener noreferrer">
-            @freire
-          </a>
-        </p>
-        <p>
-          Instagram:
-          <a href="https://www.instagram.com/freire" target="_blank" rel="noopener noreferrer">
-            @freire
-          </a>
-        </p>
+        © <span id="current-year"></span> Freire Júnior Caiado - Law Firm and Legal Consultancy · Brasília/DF · Brazil.
+      </div>
+      <div class="footer-note">
+        This website is strictly informational and complies with the Brazilian Bar Association rules.
+        It does not offer legal services online nor does it promise any specific outcome in judicial or administrative proceedings.
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-</main>
+  <script>
+    // Mobile menu
+    const navToggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      © <span id="current-year"></span> Freire Júnior Caiado - Advocacy and Legal Consultancy · Brasília/DF · Brazil.
-    </div>
-    <div class="footer-note">
-      This website is strictly informational. It complies with the rules of the Brazilian Bar Association (OAB) and
-      does not offer guarantees of results in judicial or administrative proceedings, nor does it promote improper
-      client solicitation.
-    </div>
-  </div>
-</footer>
+    if (navToggle && navList) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navList.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
 
-<script>
-  // Mobile menu
-  const navToggle = document.querySelector('.nav-toggle');
-  const navList = document.querySelector('.nav-list');
-
-  if (navToggle && navList) {
-    navToggle.addEventListener('click', () => {
-      navList.classList.toggle('nav-open');
-    });
-  }
-
-  // Current year in footer
-  const yearSpan = document.getElementById('current-year');
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
-  }
-</script>
+    // Automatic year in footer
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
