@@ -1212,23 +1212,33 @@
   </footer>
 
   <script>
-    // Mobile menu
-    const navToggle = document.querySelector('.nav-toggle');
-    const navList = document.querySelector('.nav-list');
+  // Mobile menu
+  const navToggle = document.querySelector('.nav-toggle');
+  const navList = document.querySelector('.nav-list');
 
-    if (navToggle && navList) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = navList.classList.toggle('nav-open');
-        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  if (navToggle && navList) {
+    // Abre/fecha no clique do botão
+    navToggle.addEventListener('click', () => {
+      const isOpen = navList.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Fecha o menu ao clicar em qualquer link do menu
+    navList.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navList.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
       });
-    }
+    });
+  }
 
-    // Automatic year in footer
-    const yearSpan = document.getElementById('current-year');
-    if (yearSpan) {
-      yearSpan.textContent = new Date().getFullYear();
-    }
-  </script>
+  // Ano automático no rodapé (mantém o que você já tinha)
+  const yearSpan = document.getElementById('current-year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+</script>
 </body>
 </html>
+
 
