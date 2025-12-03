@@ -34,3 +34,12 @@ com o Estatuto da Advocacia e da Ordem dos Advogados do Brasil, bem como com
 o Código de Ética e Disciplina da OAB, especialmente no âmbito das Seccionais
 do Distrito Federal e da Bahia, sem promessa de resultado ou captação indevida
 de clientela.
+
+## Histórico de versões
+
+- **v1.0.0 – Publicação inicial**  
+  - Estrutura PT/EN concluída.  
+  - Navegação responsiva com menu mobile.  
+  - robots.txt, sitemap.xml e página 404 configurados.  
+  - Conteúdo revisado e validado segundo parâmetros éticos da OAB (DF/BA).
+
