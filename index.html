@@ -64,7 +64,7 @@
       display: block;
     }
 
-    /* Link de pulo para o conteúdo principal (acessibilidade) */
+    /* Acessibilidade: link para pular direto ao conteúdo principal */
     .skip-link {
       position: absolute;
       left: -9999px;
@@ -129,8 +129,8 @@
       min-height: 40px;
       max-width: 40px;
       max-height: 40px;
-      flex: 0 0 40px;      /* impede encolhimento na largura */
-      border-radius: 50%;  /* círculo perfeito */
+      flex: 0 0 40px;
+      border-radius: 50%;
       background: radial-gradient(circle at 0 0, #fbbf24, #1d4ed8 45%, #020617 100%);
       box-shadow: 0 8px 20px rgba(15,23,42,0.35);
       display: flex;
@@ -140,7 +140,7 @@
       color: #f9fafb;
       font-weight: 800;
     }
-    
+
     nav {
       display: flex;
       align-items: center;
@@ -167,7 +167,7 @@
     .nav-list a {
       position: relative;
       padding-bottom: 0.2rem;
-      white-space: nowrap; /* impede quebra de linha dentro dos itens do menu */
+      white-space: nowrap;
     }
 
     .nav-list a::after {
@@ -364,7 +364,7 @@
       color: #9ca3af;
     }
 
-    /* SECTIONS */
+    /* SEÇÕES */
     .section {
       padding: 3.5rem 0;
     }
@@ -407,10 +407,10 @@
       margin: 2rem 0 1rem;
     }
 
-    /* Rolagem confortável para âncoras (menu) */
+    /* Rolagem suave com offset para o header fixo */
     section[id],
     main[id] {
-      scroll-margin-top: 80px; /* compensa o header fixo */
+      scroll-margin-top: 80px;
     }
 
     /* SOBRE O ESCRITÓRIO */
@@ -626,47 +626,31 @@
       margin-top: 0.4rem;
     }
 
-    /* CONTATO */
-.contact-grid {
-  display: flex;
-  justify-content: center;      /* centraliza o card dentro da área cinza */
-}
+    /* CONTATO – idêntico ao EN, com textos em PT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 2rem;
+      align-items: flex-start;
+    }
 
-.contact-block {
-  background: #f9fafb;
-  border-radius: var(--radius-lg);
-  padding: 1.6rem 2rem 1.8rem;
-  border: 1px solid rgba(226,232,240,0.9);
-  box-shadow: 0 10px 26px rgba(15,23,42,0.04);
-  font-size: 0.92rem;
-  max-width: 640px;             /* controla a largura horizontal do card */
-  width: 100%;
-  display: grid;
-  gap: 0.5rem;                  /* espaçamento uniforme entre blocos internos */
-}
+    .contact-block {
+      background: #f9fafb;
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.5rem 1.5rem;
+      border: 1px solid rgba(226,232,240,0.9);
+      box-shadow: 0 10px 26px rgba(15,23,42,0.04);
+      font-size: 0.92rem;
+      display: grid;
+      gap: 0.8rem;
+    }
 
-.contact-block h3 {
-  font-size: 0.86rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: var(--color-muted);
-  margin-top: 0.8rem;
-  margin-bottom: 0.2rem;
-}
-
-.contact-block h3:first-of-type {
-  margin-top: 0;                /* o primeiro título não precisa de margem-top */
-}
-
-.contact-block p {
-  margin: 0.1rem 0;             /* reduz espaçamento entre linhas de texto */
-}
-
-@media (max-width: 768px) {
-  .contact-block {
-    padding: 1.4rem 1.3rem 1.6rem;
-  }
-}
+    .contact-block strong {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-muted);
+    }
 
     /* FOOTER */
     .site-footer {
@@ -745,7 +729,7 @@
   </style>
 </head>
 <body>
-  <a href="#inicio" class="skip-link" tabindex="1">Pular para o conteúdo principal</a>
+  <a href="#inicio" class="skip-link">Pular para o conteúdo principal</a>
 
   <header class="site-header">
     <div class="container nav-container">
@@ -1156,55 +1140,61 @@
       </div>
     </section>
 
-      <!-- CONTATO -->
-  <section id="contato" class="section" aria-labelledby="contato-title">
-  <div class="container">
-    <header class="section-header">
-      <p class="section-kicker">Contato</p>
-      <h2 class="section-title" id="contato-title">Fale com o escritório</h2>
-    </header>
+    <!-- CONTATO -->
+    <section id="contato" class="section" aria-labelledby="contato-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Contato</p>
+          <h2 class="section-title" id="contato-title">Fale com o escritório</h2>
+        </header>
 
-    <div class="contact-grid">
-      <div class="contact-block" aria-label="Informações de contato do escritório">
-        <h3>Endereço</h3>
-        <p>
-          SAUS Quadra 6 · Bloco K · Edifício Belvedere · sala 1002<br>
-          Brasília-DF · 70070-915
-        </p>
+        <div class="contact-grid">
+          <div class="contact-block" aria-label="Informações de contato do escritório">
+            <div>
+              <strong>Endereço</strong>
+              <p>
+                SAUS Quadra 6 · Bloco K · Edifício Belvedere · sala 1002<br>
+                Brasília-DF · 70070-915 · Brasil
+              </p>
+            </div>
 
-        <h3>Contato direto</h3>
-        <p>
-          E-mail:
-          <a href="mailto:freire@adv.br">freire@adv.br</a>
-        </p>
-        <p>
-          Telefone fixo:
-          <a href="tel:+556132732554">+55 61 3273-2554</a>
-        </p>
-        <p>
-          Celular / WhatsApp:
-          <a href="https://wa.me/5561981732554" target="_blank" rel="noopener noreferrer">
-            +55 61 98173-2554
-          </a>
-        </p>
+            <div>
+              <strong>Contato direto</strong>
+              <p>
+                E-mail:
+                <a href="mailto:freire@adv.br">freire@adv.br</a>
+              </p>
+              <p>
+                Telefone fixo:
+                <a href="tel:+556132732554">+55 61 3273-2554</a>
+              </p>
+              <p>
+                Celular / WhatsApp:
+                <a href="https://wa.me/5561981732554" target="_blank" rel="noopener noreferrer">
+                  +55 61 98173-2554
+                </a>
+              </p>
+            </div>
 
-        <h3>Redes</h3>
-        <p>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/freire" target="_blank" rel="noopener noreferrer">
-            @freire
-          </a>
-        </p>
-        <p>
-          Instagram:
-          <a href="https://www.instagram.com/freire" target="_blank" rel="noopener noreferrer">
-            @freire
-          </a>
-        </p>
+            <div>
+              <strong>Redes</strong>
+              <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/freire" target="_blank" rel="noopener noreferrer">
+                  @freire
+                </a>
+              </p>
+              <p>
+                Instagram:
+                <a href="https://www.instagram.com/freire" target="_blank" rel="noopener noreferrer">
+                  @freire
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -1213,7 +1203,7 @@
         © <span id="ano-atual"></span> Freire Júnior Caiado - Advocacia e Consultoria · Brasília/DF.
       </div>
       <div class="footer-note">
-        Este site tem caráter exclusivamente informativo, em conformidade com o Estatuto da Advocacia e da OAB, em especial as seccionais DF e BA. 
+        Este site tem caráter exclusivamente informativo, em conformidade com o Estatuto da Advocacia e da OAB, em especial as seccionais DF e BA.
         Não há oferta de serviços pela internet, nem promessa de resultado em processos judiciais ou administrativos.
       </div>
     </div>
@@ -1239,6 +1229,3 @@
   </script>
 </body>
 </html>
-
-
-
