@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://freirejrcaiado.github.io/freire-junior-caiado-site/sitemap.xml
+Sitemap: https://www.freirejuniorcaiado.adv.br/sitemap.xml
+
