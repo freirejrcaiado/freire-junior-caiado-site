@@ -444,44 +444,31 @@
       gap: 0.2rem;
     }
 
-    /* TIMELINE – linha central perfeitamente alinhada aos pontos */
+/* TIMELINE – linha fina e pontos centrados */
 .timeline {
   list-style: none;
-  position: relative;
-  padding-left: 2rem; /* espaço para a linha + pontos */
+  border-left: 1px solid rgba(148,163,184,0.6);
+  padding-left: 1.5rem; /* ligeiro respiro do texto em relação à linha */
   display: grid;
   gap: 1rem;
   font-size: 0.9rem;
+  position: relative;
 }
 
-/* linha vertical */
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 0.55rem;              /* eixo X comum da linha e dos pontos */
-  top: 0.25rem;
-  bottom: 0.25rem;
-  width: 2px;
-  background: rgba(148,163,184,0.6);
-}
-
-/* cada item da linha do tempo */
 .timeline-item {
   position: relative;
 }
 
-/* ponto da linha do tempo, centrado na linha */
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: 0.55rem;              /* mesmo valor da linha */
+  left: -5px; /* metade do diâmetro (10px) para o centro bater exatamente na linha */
   top: 0.35rem;
   width: 10px;
   height: 10px;
   background: #1d4ed8;
   border-radius: 999px;
   box-shadow: 0 0 0 4px rgba(191,219,254,0.8);
-  transform: translate(-50%, -50%); /* centraliza o círculo no eixo da linha */
 }
  
     .timeline-year {
@@ -1286,4 +1273,5 @@
   </script>
 </body>
 </html>
+
 
