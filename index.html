@@ -467,7 +467,7 @@
          left = -padding-left - (largura_do_ponto / 2)
          = -1.5rem - 5px
       */
-      left: calc(-1.5rem - 5px);
+      left: -30px; /* 1.5rem (~24px) + 5px (raio do ponto) + ~0,5px da borda ≈ 30px */ /* centro do círculo exatamente sobre a linha */
       top: 0.35rem; /* ajuste fino vertical para alinhar com o texto do ano */
       width: 10px;
       height: 10px;
@@ -1276,6 +1276,7 @@
 
 </body>
 </html>
+
 
 
 
