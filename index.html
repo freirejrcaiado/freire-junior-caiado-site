@@ -445,29 +445,35 @@
       gap: 0.2rem;
     }
 
+    /* ===== LINHA DO TEMPO – linha fina + pontos alinhados ao centro ===== */
     .timeline {
       list-style: none;
-      border-left: 1px solid rgba(148,163,184,0.6);
-      padding-left: 1.2rem;
+      border-left: 1px solid rgba(148,163,184,0.6); /* linha vertical da timeline */
+      padding-left: 1.5rem; /* espaço para a linha + ponto; entra no cálculo abaixo */
       display: grid;
       gap: 1rem;
       font-size: 0.9rem;
+      position: relative;
     }
 
     .timeline-item {
-      position: relative;
+      position: relative; /* referência para o pseudo-elemento ::before */
     }
 
     .timeline-item::before {
       content: "";
       position: absolute;
-      left: -1.35rem;
-      top: 0.2rem;
+      /* Centro do círculo em cima da linha (border-left da .timeline):
+         left = -padding-left - (largura_do_ponto / 2)
+         = -1.5rem - 5px
+      */
+      left: calc(-1.5rem - 5px);
+      top: 0.35rem; /* ajuste fino vertical para alinhar com o texto do ano */
       width: 10px;
       height: 10px;
       background: #1d4ed8;
       border-radius: 999px;
-      box-shadow: 0 0 0 4px rgba(191,219,254,0.8);
+      box-shadow: 0 0 0 4px rgba(191,219,254,0.8); /* "aura" azul clara */
     }
 
     .timeline-year {
@@ -1169,7 +1175,7 @@
           </article>
         </div>
       </div>
-</section>
+    </section>
 
     <!-- CONTATO -->
     <section id="contato" class="section" aria-labelledby="contato-title">
@@ -1261,15 +1267,17 @@
     });
   }
 
-  // Ano automático no rodapé (mantém o que você já tinha)
-  const yearSpan = document.getElementById('current-year');
+  // Ano automático no rodapé
+  const yearSpan = document.getElementById('ano-atual');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
-</script>
+  </script>
 
 </body>
 </html>
+
+
 
 
 
